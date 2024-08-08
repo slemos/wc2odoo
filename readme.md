@@ -21,11 +21,11 @@ To install and configure Odoo for WooCommerce, please follow the steps below:
 4. Create a release version of this plugin by running `npm run archive`.
 5. Upload the plugin to your WooCommerce site and activate it!.
 
-For detailed instructions and troubleshooting, please refer to the [documentation](https://github.com/username/repo/wiki).
+
 
 ## Contributing
 
-We welcome contributions from the community to enhance and improve Odoo for WooCommerce. If you would like to contribute, please follow our [contribution guidelines](https://github.com/username/repo/blob/main/CONTRIBUTING.md).
+We welcome contributions from the community to enhance and improve Odoo for WooCommerce.
 
 ## License
 This project is licensed under the [GPL-2 License](https://opensource.org/licenses/GPL-2.0).
