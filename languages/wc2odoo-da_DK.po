@@ -1,0 +1,938 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo for Woocommerce 3.4.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/odoo-for-woocommerce\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-05-07T19:41:22+00:00\n"
+"PO-Revision-Date: 2023-05-08 08:00+0530\n"
+"Language: da\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Domain: odoo-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+msgid "Odoo for Woocommerce"
+msgstr "Odoo for Woocommerce"
+
+#. Plugin URI of the plugin
+msgid "https://woocommerce.com/products/odoo-for-woocommerce/"
+msgstr "https://woocommerce.com/products/odoo-for-woocommerce/"
+
+#. Description of the plugin
+msgid "Create customer In ODOO and create invoice when order is placed."
+msgstr "Opret kunde i Odoo og opret faktura, når ordren er placeret."
+
+#. Author of the plugin
+msgid "OPMC"
+msgstr "OPMC"
+
+#. Author URI of the plugin
+msgid "https://woocommerce.com"
+msgstr "https://woocommerce.com"
+
+#. translators: 1: Strong Tag start, 2: Strong Tag end, 3: link start 4: link end.
+#: includes/class-common-functions.php:47
+msgid "%1$s WooCommerce ODOO Integration is almost ready. %2$s To get started, %3$s go to ODOO Account Settings %4$s and Set Odoo details and click save button."
+msgstr "%1$s WooCommerce Odoo -integration er næsten klar. %2$s for at komme i gang, %3$s Gå til Odoo -kontoindstillinger %4$s og indstil ODOO -detaljer og klik på knappen Gem."
+
+#. translators: 1: Strong Tag start, 2: Strong Tag end, 3: link start 4: link end.
+#: includes/class-common-functions.php:50
+msgid "%1$s WooCommerce ODOO Integration is almost ready. %2$s To get started, %3$s go to ODOO Account Settings %4$s and %1$s Set Odoo Tax, Shipping Tax details and Sale Invoice Journal %2$s and click save button."
+msgstr "%1$s WooCommerce Odoo -integration er næsten klar. %2$s for at komme i gang, %3$s Gå til Odoo -kontoindstillinger %4$s og %1$s Indstil ODOO -skat, forsendelsesskatoplysninger og salgsfaktura Journal %2$s og klik på Gem -knappen."
+
+#. translators: 1: Strong Tag start, 2: Strong Tag end, 3: link start 4: link end.
+#: includes/class-common-functions.php:160
+msgid "%1$s WooCommerce ODOO Integration Server URL is Invalid. %2$s Please verify ODOO Credentials & %3$s go to ODOO Account Settings %4$s and Set Odoo details and click save button."
+msgstr "%1$s WooCommerce Odoo Integration Server URL er ugyldig. %2$s Bekræft venligst ODOO -legitimationsoplysninger & %3$s Gå til Odoo -kontoindstillinger %4$s og indstil ODOO -detaljer, og klik på knappen Gem."
+
+#. translators: 1: Strong Tag start, 2: Strong Tag end, 3: link start 4: link end.
+#: includes/class-common-functions.php:164
+msgid "%1$s WooCommerce ODOO Integration credentials are Invalid. %2$s Please verify ODOO credentials & %3$s go to ODOO Account Settings %4$s and Set Odoo details and click save button."
+msgstr "%1$s WooCommerce Odoo Integration Credentials er ugyldige. %2$s Bekræft venligst ODOO -legitimationsoplysninger & %3$s Gå til Odoo -kontoindstillinger %4$s og indstil ODOO -detaljer, og klik på knappen Gem."
+
+#: includes/class-wc-odoo-admin-settings.php:24
+#: includes/tamplate-admin-setting-page.php:261
+msgid "ODOO Integration"
+msgstr "Odoo -integration"
+
+#: includes/class-wc-odoo-admin-settings.php:25
+msgid "Sync WooCommerce Customer,Product and Order to Odoo ERP."
+msgstr "Synkronisering af Woocommerce kunde, produkt og orden til ODOO ERP."
+
+#: includes/class-wc-odoo-admin-settings.php:25
+msgid "Important Note"
+msgstr "Vigtig note"
+
+#: includes/class-wc-odoo-admin-settings.php:25
+msgid "Fill The Address Details for company. (Settings -> General Settings -> Manage Companies)"
+msgstr "Fyld adresseoplysningerne til virksomheden. (Indstillinger -> Generelle indstillinger -> Administrer virksomheder)"
+
+#: includes/class-wc-odoo-admin-settings.php:25
+msgid "Change Invoice Quantity Setting. (Settings -> Sales -> Invoicing -> Select Invoice what is ordered )"
+msgstr "Skift fakturamængdeindstilling. (Indstillinger -> Salg -> Fakturering -> Vælg faktura, hvad der bestilles)"
+
+#: includes/class-wc-odoo-admin-settings.php:92
+msgid "Odoo credentials are not valid."
+msgstr "Odoo -legitimationsoplysninger er ikke gyldige."
+
+#: includes/class-wc-odoo-admin-settings.php:98
+msgid "Odoo Host url is not valid."
+msgstr "ODOO Host URL er ikke gyldig."
+
+#: includes/class-wc-odoo-admin-settings.php:104
+msgid "Please provide valid Odoo credentials to connect."
+msgstr "Angiv gyldige Odoo -legitimationsoplysninger for at oprette forbindelse."
+
+#: includes/class-wc-odoo-admin-settings.php:111
+msgid "Odoo account is connected."
+msgstr "Odoo -konto er tilsluttet."
+
+#: includes/class-wc-odoo-admin-settings.php:157
+msgid "Enable Logging"
+msgstr "Aktivér logning"
+
+#: includes/class-wc-odoo-admin-settings.php:158
+msgid "Log ODOO events, such as API requests."
+msgstr "Log Odoo -begivenheder, såsom API -anmodninger."
+
+#: includes/class-wc-odoo-admin-settings.php:161
+#: includes/class-wc-odoo-admin-settings.php:163
+msgid "View Log"
+msgstr "Se log"
+
+#: includes/class-wc-odoo-admin-settings.php:169
+msgid "Select Odoo Version"
+msgstr "Vælg Odoo -version"
+
+#: includes/class-wc-odoo-admin-settings.php:171
+msgid "Odoo Version"
+msgstr "Odoo -version"
+
+#: includes/class-wc-odoo-admin-settings.php:179
+msgid "Select Odoo version for your CRM"
+msgstr "Vælg Odoo -version til din CRM"
+
+#: includes/class-wc-odoo-admin-settings.php:184
+msgid "Server URL"
+msgstr "Server URL"
+
+#: includes/class-wc-odoo-admin-settings.php:186
+msgid "Insert Database server URL. You can find it in your Odoo account"
+msgstr "Indsæt databaseserver URL. Du kan finde det på din Odoo -konto"
+
+#: includes/class-wc-odoo-admin-settings.php:193
+msgid "Database Name"
+msgstr "Databasenavn"
+
+#: includes/class-wc-odoo-admin-settings.php:195
+msgid "Insert database name. You can find it in your Odoo account."
+msgstr "Indsæt databasenavn. Du kan finde det på din Odoo -konto."
+
+#: includes/class-wc-odoo-admin-settings.php:201
+msgid "Username"
+msgstr "Brugernavn"
+
+#: includes/class-wc-odoo-admin-settings.php:203
+msgid "Insert username. You can find it in your Odoo account."
+msgstr "Indsæt brugernavn. Du kan finde det på din Odoo -konto."
+
+#: includes/class-wc-odoo-admin-settings.php:209
+#: assets/js/admin-settings.js:102
+msgid "Password"
+msgstr "Adgangskode"
+
+#: includes/class-wc-odoo-admin-settings.php:211
+#: assets/js/admin-settings.js:103
+msgid "Insert password for your API access user"
+msgstr "Indsæt adgangskode til din API -adgangsbruger"
+
+#: includes/class-wc-odoo-admin-settings.php:217
+msgid "Debug Log"
+msgstr "Debug log"
+
+#: includes/class-wc-odoo-admin-settings.php:225
+#: includes/class-wc-odoo-admin-settings.php:227
+msgid "Odoo SKU Mapping"
+msgstr "Odoo SKU -kortlægning"
+
+#: includes/class-wc-odoo-admin-settings.php:230
+msgid "Internal Reference"
+msgstr "Intern reference"
+
+#: includes/class-wc-odoo-admin-settings.php:231
+msgid "Barcode"
+msgstr "Stregkode"
+
+#: includes/class-wc-odoo-admin-settings.php:234
+msgid "Odoo SKU Mapping for your CRM"
+msgstr "Odoo SKU -kortlægning til din CRM"
+
+#: includes/class-wc-odoo-admin-settings.php:289
+#: includes/class-wc-odoo-admin-settings.php:291
+msgid "Import Products Frequency"
+msgstr "Importer produkters frekvens"
+
+#: includes/class-wc-odoo-admin-settings.php:294
+#: includes/class-wc-odoo-admin-settings.php:353
+#: includes/class-wc-odoo-admin-settings.php:374
+#: includes/class-wc-odoo-admin-settings.php:403
+#: includes/class-wc-odoo-admin-settings.php:423
+#: includes/class-wc-odoo-admin-settings.php:442
+#: includes/class-wc-odoo-admin-settings.php:473
+#: includes/class-wc-odoo-admin-settings.php:485
+#: includes/class-wc-odoo-admin-settings.php:514
+#: includes/class-wc-odoo-admin-settings.php:574
+#: includes/class-wc-odoo-admin-settings.php:595
+#: includes/class-wc-odoo-admin-settings.php:623
+#: includes/class-wc-odoo-admin-settings.php:673
+#: includes/class-wc-odoo-admin-settings.php:722
+#: includes/class-wc-odoo-admin-settings.php:746
+#: includes/tamplate-admin-setting-page.php:243
+msgid "Every Hour"
+msgstr "Hver time"
+
+#: includes/class-wc-odoo-admin-settings.php:295
+#: includes/class-wc-odoo-admin-settings.php:354
+#: includes/class-wc-odoo-admin-settings.php:375
+#: includes/class-wc-odoo-admin-settings.php:404
+#: includes/class-wc-odoo-admin-settings.php:424
+#: includes/class-wc-odoo-admin-settings.php:443
+#: includes/class-wc-odoo-admin-settings.php:474
+#: includes/class-wc-odoo-admin-settings.php:486
+#: includes/class-wc-odoo-admin-settings.php:515
+#: includes/class-wc-odoo-admin-settings.php:575
+#: includes/class-wc-odoo-admin-settings.php:596
+#: includes/class-wc-odoo-admin-settings.php:624
+#: includes/class-wc-odoo-admin-settings.php:674
+#: includes/class-wc-odoo-admin-settings.php:723
+#: includes/class-wc-odoo-admin-settings.php:747
+#: includes/tamplate-admin-setting-page.php:244
+msgid "Twice A Day"
+msgstr "To gange om dagen"
+
+#: includes/class-wc-odoo-admin-settings.php:296
+#: includes/class-wc-odoo-admin-settings.php:355
+#: includes/class-wc-odoo-admin-settings.php:376
+#: includes/class-wc-odoo-admin-settings.php:405
+#: includes/class-wc-odoo-admin-settings.php:425
+#: includes/class-wc-odoo-admin-settings.php:444
+#: includes/class-wc-odoo-admin-settings.php:475
+#: includes/class-wc-odoo-admin-settings.php:487
+#: includes/class-wc-odoo-admin-settings.php:516
+#: includes/class-wc-odoo-admin-settings.php:576
+#: includes/class-wc-odoo-admin-settings.php:597
+#: includes/class-wc-odoo-admin-settings.php:625
+#: includes/class-wc-odoo-admin-settings.php:675
+#: includes/class-wc-odoo-admin-settings.php:724
+#: includes/class-wc-odoo-admin-settings.php:748
+#: includes/tamplate-admin-setting-page.php:245
+msgid "Once A Day"
+msgstr "En gang om dagen"
+
+#: includes/class-wc-odoo-admin-settings.php:298
+msgid "Import Products Data Frequency"
+msgstr "Importer produkter Datafrekvens"
+
+#: includes/class-wc-odoo-admin-settings.php:302
+#: includes/class-wc-odoo-admin-settings.php:304
+#: includes/class-wc-odoo-admin-settings.php:306
+msgid "Import Products"
+msgstr "Importer produkter"
+
+#: includes/class-wc-odoo-admin-settings.php:309
+msgid "Manual Import Products"
+msgstr "Manuelle importprodukter"
+
+#: includes/class-wc-odoo-admin-settings.php:316
+#: includes/class-wc-odoo-admin-settings.php:318
+#: includes/class-wc-odoo-admin-settings.php:320
+msgid "Exclude PoS Products"
+msgstr "Ekskluder POS -produkter"
+
+#: includes/class-wc-odoo-admin-settings.php:324
+#: includes/class-wc-odoo-admin-settings.php:326
+#: includes/class-wc-odoo-admin-settings.php:328
+#: includes/class-wc-odoo-admin-settings.php:545
+#: includes/class-wc-odoo-admin-settings.php:547
+#: includes/class-wc-odoo-admin-settings.php:549
+msgid "Update Products"
+msgstr "Opdater produkter"
+
+#: includes/class-wc-odoo-admin-settings.php:332
+#: includes/class-wc-odoo-admin-settings.php:334
+#: includes/class-wc-odoo-admin-settings.php:336
+#: includes/class-wc-odoo-admin-settings.php:553
+#: includes/class-wc-odoo-admin-settings.php:555
+#: includes/class-wc-odoo-admin-settings.php:557
+msgid "Synchronize Stocks"
+msgstr "Synkroniser lagre"
+
+#: includes/class-wc-odoo-admin-settings.php:340
+#: includes/class-wc-odoo-admin-settings.php:342
+#: includes/class-wc-odoo-admin-settings.php:344
+#: includes/class-wc-odoo-admin-settings.php:561
+#: includes/class-wc-odoo-admin-settings.php:563
+#: includes/class-wc-odoo-admin-settings.php:565
+msgid "Synchronize Price"
+msgstr "Synkroniser pris"
+
+#: includes/class-wc-odoo-admin-settings.php:348
+#: includes/class-wc-odoo-admin-settings.php:350
+msgid "Import Categories Frequency"
+msgstr "Importkategorier frekvens"
+
+#: includes/class-wc-odoo-admin-settings.php:357
+msgid "Category Sync Frequency"
+msgstr "Kategorisynkroniseringsfrekvens"
+
+#: includes/class-wc-odoo-admin-settings.php:361
+#: includes/class-wc-odoo-admin-settings.php:363
+#: includes/class-wc-odoo-admin-settings.php:365
+msgid "Import Categories"
+msgstr "Importkategorier"
+
+#: includes/class-wc-odoo-admin-settings.php:369
+#: includes/class-wc-odoo-admin-settings.php:371
+msgid "Import Attribute Frequency"
+msgstr "Importattributfrekvens"
+
+#: includes/class-wc-odoo-admin-settings.php:378
+msgid "Select Attribute Cron Frequency to Sync Attribute"
+msgstr "Vælg attribut CRON -frekvens for at synkronisere attributten"
+
+#: includes/class-wc-odoo-admin-settings.php:382
+#: includes/class-wc-odoo-admin-settings.php:384
+#: includes/class-wc-odoo-admin-settings.php:386
+msgid "Import Attribute"
+msgstr "Importattribut"
+
+#: includes/class-wc-odoo-admin-settings.php:391
+#: includes/class-wc-odoo-admin-settings.php:393
+#: includes/class-wc-odoo-admin-settings.php:611
+#: includes/class-wc-odoo-admin-settings.php:613
+msgid "Update Order Status"
+msgstr "Opdater ordre status"
+
+#: includes/class-wc-odoo-admin-settings.php:398
+#: includes/class-wc-odoo-admin-settings.php:400
+#: includes/class-wc-odoo-admin-settings.php:618
+#: includes/class-wc-odoo-admin-settings.php:620
+msgid "Update Order Status Frequency"
+msgstr "Opdateringsordre Statusfrekvens"
+
+#: includes/class-wc-odoo-admin-settings.php:410
+#: includes/class-wc-odoo-admin-settings.php:412
+#: includes/class-wc-odoo-admin-settings.php:414
+msgid "Import/Update Customer"
+msgstr "Import/opdateringskunde"
+
+#: includes/class-wc-odoo-admin-settings.php:418
+#: includes/class-wc-odoo-admin-settings.php:420
+msgid "Import/Update Customer Frequency"
+msgstr "Importer/opdatering Kundefrekvens"
+
+#: includes/class-wc-odoo-admin-settings.php:430
+msgid "Import Order"
+msgstr "Importordre"
+
+#: includes/class-wc-odoo-admin-settings.php:437
+#: includes/class-wc-odoo-admin-settings.php:439
+msgid "Import Order Frequency"
+msgstr "Importordrefrekvens"
+
+#: includes/class-wc-odoo-admin-settings.php:450
+#: includes/class-wc-odoo-admin-settings.php:730
+#: includes/tamplate-admin-setting-page.php:379
+#: includes/tamplate-admin-setting-page.php:433
+#: includes/tamplate-admin-setting-page.php:726
+#: includes/tamplate-admin-setting-page.php:747
+#: includes/tamplate-admin-setting-page.php:767
+msgid "From"
+msgstr "Fra"
+
+#: includes/class-wc-odoo-admin-settings.php:456
+#: includes/class-wc-odoo-admin-settings.php:736
+#: includes/tamplate-admin-setting-page.php:381
+#: includes/tamplate-admin-setting-page.php:435
+#: includes/tamplate-admin-setting-page.php:728
+#: includes/tamplate-admin-setting-page.php:749
+#: includes/tamplate-admin-setting-page.php:769
+msgid "To"
+msgstr "Til"
+
+#: includes/class-wc-odoo-admin-settings.php:461
+#: includes/class-wc-odoo-admin-settings.php:463
+msgid "Import Refund Order"
+msgstr "Import refusionsordre"
+
+#: includes/class-wc-odoo-admin-settings.php:468
+#: includes/class-wc-odoo-admin-settings.php:470
+msgid "Import Refund Order Frequency"
+msgstr "Import Refusion Ordrefrekvens"
+
+#: includes/class-wc-odoo-admin-settings.php:480
+#: includes/class-wc-odoo-admin-settings.php:482
+msgid "Import Coupon Frequency"
+msgstr "Importer kuponfrekvens"
+
+#: includes/class-wc-odoo-admin-settings.php:489
+#: includes/class-wc-odoo-admin-settings.php:750
+msgid "Select Coupon Cron Frequency to sync Coupon"
+msgstr "Vælg kupon cron frekvens for at synkronisere kupon"
+
+#: includes/class-wc-odoo-admin-settings.php:493
+#: includes/class-wc-odoo-admin-settings.php:495
+msgid "Import Coupon"
+msgstr "Importer kupon"
+
+#: includes/class-wc-odoo-admin-settings.php:497
+#: includes/class-wc-odoo-admin-settings.php:505
+msgid "Select Coupon Cron to sync Coupon"
+msgstr "Vælg kupon cron for at synkronisere kupon"
+
+#: includes/class-wc-odoo-admin-settings.php:501
+#: includes/class-wc-odoo-admin-settings.php:503
+#: includes/class-wc-odoo-admin-settings.php:762
+#: includes/class-wc-odoo-admin-settings.php:764
+msgid "Update Coupon"
+msgstr "Opdater kupon"
+
+#: includes/class-wc-odoo-admin-settings.php:509
+#: includes/class-wc-odoo-admin-settings.php:511
+#: includes/class-wc-odoo-admin-settings.php:518
+msgid "Export Products Frequency"
+msgstr "Eksportprodukter frekvens"
+
+#: includes/class-wc-odoo-admin-settings.php:522
+msgid "Exclude Product by Categories"
+msgstr "Ekskluder produkt efter kategorier"
+
+#: includes/class-wc-odoo-admin-settings.php:524
+msgid "Exclude Products by Categories"
+msgstr "Ekskluder produkter efter kategorier"
+
+#: includes/class-wc-odoo-admin-settings.php:527
+msgid "Exclude products by categories not to export"
+msgstr "Ekskluder produkter efter kategorier til ikke at eksportere"
+
+#: includes/class-wc-odoo-admin-settings.php:531
+#: includes/class-wc-odoo-admin-settings.php:533
+#: includes/class-wc-odoo-admin-settings.php:535
+msgid "Export Products"
+msgstr "Eksportprodukter"
+
+#: includes/class-wc-odoo-admin-settings.php:538
+msgid "Manual Export Products"
+msgstr "Manuelle eksportprodukter"
+
+#: includes/class-wc-odoo-admin-settings.php:569
+#: includes/class-wc-odoo-admin-settings.php:571
+msgid "Export Categories Frequency"
+msgstr "Eksportkategorier frekvens"
+
+#: includes/class-wc-odoo-admin-settings.php:578
+msgid "Select Category Cron Frequency to sync Category"
+msgstr "Vælg kategori CRON -frekvens for at synkronisere kategori"
+
+#: includes/class-wc-odoo-admin-settings.php:582
+#: includes/class-wc-odoo-admin-settings.php:584
+#: includes/class-wc-odoo-admin-settings.php:586
+msgid "Export Categories"
+msgstr "Eksportkategorier"
+
+#: includes/class-wc-odoo-admin-settings.php:590
+#: includes/class-wc-odoo-admin-settings.php:592
+msgid "Export Attribute Frequency"
+msgstr "Eksportattributfrekvens"
+
+#: includes/class-wc-odoo-admin-settings.php:599
+msgid "Select Attribute Cron Frequency to sync Attribute"
+msgstr "Vælg attribut CRON -frekvens for at synkronisere attributten"
+
+#: includes/class-wc-odoo-admin-settings.php:603
+#: includes/class-wc-odoo-admin-settings.php:605
+#: includes/class-wc-odoo-admin-settings.php:607
+msgid "Export Attribute"
+msgstr "Eksportattribut"
+
+#: includes/class-wc-odoo-admin-settings.php:630
+#: includes/class-wc-odoo-admin-settings.php:632
+msgid "Export order On Checkout"
+msgstr "Eksportordre ved kassen"
+
+#: includes/class-wc-odoo-admin-settings.php:637
+#: includes/class-wc-odoo-admin-settings.php:639
+#: includes/tamplate-admin-setting-page.php:511
+#: includes/tamplate-admin-setting-page.php:515
+msgid "Export Invoice"
+msgstr "Eksportfaktura"
+
+#: includes/class-wc-odoo-admin-settings.php:644
+#: includes/class-wc-odoo-admin-settings.php:646
+#: includes/tamplate-admin-setting-page.php:525
+#: includes/tamplate-admin-setting-page.php:529
+msgid "Mark Invoice Paid"
+msgstr "Mark faktura betalt"
+
+#: includes/class-wc-odoo-admin-settings.php:648
+#: includes/class-wc-odoo-admin-settings.php:656
+msgid "Export Invoice option should be enabled for this."
+msgstr "Option af eksportfaktura skal aktiveres til dette."
+
+#: includes/class-wc-odoo-admin-settings.php:652
+#: includes/class-wc-odoo-admin-settings.php:654
+#: includes/tamplate-admin-setting-page.php:540
+#: includes/tamplate-admin-setting-page.php:544
+msgid "Export Refund Order"
+msgstr "Eksportrefusionsordre"
+
+#: includes/class-wc-odoo-admin-settings.php:661
+#: includes/class-wc-odoo-admin-settings.php:663
+msgid "Export/Update Customer"
+msgstr "Eksport/opdateringskunde"
+
+#: includes/class-wc-odoo-admin-settings.php:668
+#: includes/class-wc-odoo-admin-settings.php:670
+msgid "Export/Update Customer Frequency"
+msgstr "Eksport/opdatering Kundefrekvens"
+
+#: includes/class-wc-odoo-admin-settings.php:680
+#: includes/class-wc-odoo-admin-settings.php:682
+msgid "Export Order"
+msgstr "Eksportordre"
+
+#: includes/class-wc-odoo-admin-settings.php:688
+#: includes/class-wc-odoo-admin-settings.php:690
+#: includes/tamplate-admin-setting-page.php:555
+#: includes/tamplate-admin-setting-page.php:559
+msgid "Status Mapping"
+msgstr "Status kortlægning"
+
+#: includes/class-wc-odoo-admin-settings.php:695
+#: includes/class-wc-odoo-admin-settings.php:697
+#: includes/class-wc-odoo-admin-settings.php:703
+#: includes/class-wc-odoo-admin-settings.php:705
+#: includes/tamplate-admin-setting-page.php:588
+msgid "Order Status Mapping"
+msgstr "Kortlægning af bestillingsstatus"
+
+#: includes/class-wc-odoo-admin-settings.php:708
+#: includes/tamplate-admin-setting-page.php:572
+msgid "Quote Only"
+msgstr "Kun citat"
+
+#: includes/class-wc-odoo-admin-settings.php:709
+#: includes/tamplate-admin-setting-page.php:573
+msgid "Quote and Sales Order"
+msgstr "Citat og salgsordre"
+
+#: includes/class-wc-odoo-admin-settings.php:710
+#: includes/tamplate-admin-setting-page.php:574
+msgid "In Payment Invoice"
+msgstr "I betalingsfaktura"
+
+#: includes/class-wc-odoo-admin-settings.php:711
+#: includes/tamplate-admin-setting-page.php:575
+msgid "Paid Invoice"
+msgstr "Betalt faktura"
+
+#: includes/class-wc-odoo-admin-settings.php:712
+#: includes/tamplate-admin-setting-page.php:576
+msgid "Cancelled"
+msgstr "Aflyst"
+
+#: includes/class-wc-odoo-admin-settings.php:717
+#: includes/class-wc-odoo-admin-settings.php:719
+msgid "Export Order Frequency"
+msgstr "Eksportordrefrekvens"
+
+#: includes/class-wc-odoo-admin-settings.php:741
+#: includes/class-wc-odoo-admin-settings.php:743
+msgid "Export Coupon Frequency"
+msgstr "Eksportkuponfrekvens"
+
+#: includes/class-wc-odoo-admin-settings.php:754
+#: includes/class-wc-odoo-admin-settings.php:756
+msgid "Export Coupon"
+msgstr "Eksportkupon"
+
+#: includes/class-wc-odoo-admin-settings.php:758
+msgid "Select Coupon to sync Coupon"
+msgstr "Vælg kupon for at synkronisere kupon"
+
+#: includes/class-wc-odoo-admin-settings.php:766
+msgid "Update Coupon to Odoo"
+msgstr "Opdater kupon til Odoo"
+
+#: includes/class-wc-odoo-admin-settings.php:792
+#: includes/class-wc-odoo-admin-settings.php:794
+msgid "Select Company"
+msgstr "Vælg firma"
+
+#: includes/class-wc-odoo-admin-settings.php:798
+msgid "Select Company for your CRM"
+msgstr "Vælg firma til din CRM"
+
+#: includes/class-wc-odoo-admin-settings.php:802
+#: includes/class-wc-odoo-admin-settings.php:804
+msgid "Select Sale Invoice Journal"
+msgstr "Vælg salgsfakturapournal"
+
+#: includes/class-wc-odoo-admin-settings.php:808
+msgid "Select Sale Journal for Odoo invoices"
+msgstr "Vælg Sale Journal til Odoo -fakturaer"
+
+#: includes/class-wc-odoo-admin-settings.php:812
+#: includes/class-wc-odoo-admin-settings.php:814
+msgid "Select Tax Type"
+msgstr "Vælg skattetype"
+
+#: includes/class-wc-odoo-admin-settings.php:818
+#: includes/class-wc-odoo-admin-settings.php:828
+msgid "Select tax term for Odoo invoices"
+msgstr "Vælg skatteperiode for Odoo -fakturaer"
+
+#: includes/class-wc-odoo-admin-settings.php:822
+#: includes/class-wc-odoo-admin-settings.php:824
+msgid "Select Shipping Tax Type"
+msgstr "Vælg Forsendelsesskattetype"
+
+#: includes/class-wc-odoo-admin-settings.php:832
+#: includes/class-wc-odoo-admin-settings.php:834
+msgid "Use Fiscal Positions"
+msgstr "Brug skattemæssige positioner"
+
+#: includes/class-wc-odoo-admin-settings.php:839
+#: includes/class-wc-odoo-admin-settings.php:841
+#: includes/class-wc-odoo-admin-settings.php:845
+msgid "Select Fiscal Position"
+msgstr "Vælg finanspolitisk position"
+
+#: includes/class-wc-odoo-admin-settings.php:854
+#: includes/class-wc-odoo-admin-settings.php:856
+msgid "Select GST Treatment"
+msgstr "Vælg GST -behandling"
+
+#: includes/class-wc-odoo-admin-settings.php:859
+msgid "Select GST Treatmnt for Odoo invoices"
+msgstr "Vælg GST TROADMNT til ODOO -fakturaer"
+
+#: includes/class-wc-odoo-admin-settings.php:1004
+#: assets/js/admin-settings.js:231
+msgid "-- Select Invoice Journal --"
+msgstr "-Vælg fakturapournal-"
+
+#: includes/class-wc-odoo-admin-settings.php:1035
+#: assets/js/admin-settings.js:230
+msgid "-- Select Tax Type --"
+msgstr "-Vælg skattetype-"
+
+#: includes/class-wc-odoo-admin-settings.php:1057
+#: assets/js/admin-settings.js:197
+#: assets/js/admin-settings.js:208
+msgid "-- Select Fiscal Position --"
+msgstr "-Vælg finanspolitisk position-"
+
+#: includes/class-wc-odoo-admin-settings.php:1116
+msgid "-- Select Company --"
+msgstr "-Vælg firma-"
+
+#: includes/class-wc-odoo-admin-settings.php:1135
+msgid "-- Select Categories --"
+msgstr "-Vælg kategorier-"
+
+#: includes/class-wc2odoo-functions.php:984
+msgid "WC Shipping Charge"
+msgstr "WC -forsendelsesgebyr"
+
+#: includes/class-wc2odoo-functions.php:990
+msgid "delivery product created by WC Odoo Integration"
+msgstr "Leveringsprodukt oprettet af WC ODOO -integration"
+
+#: includes/class-wc2odoo-functions.php:1020
+msgid "Shipping Charge"
+msgstr "Forsendelsesafgift"
+
+#: includes/class-wc2odoo-functions.php:1370
+#: includes/multi-company-files/class-wc-odoo-functions.php:1255
+msgid "Product import is already running."
+msgstr "Produktimport kører allerede."
+
+#: includes/class-wc2odoo-functions.php:1443
+#: includes/multi-company-files/class-wc-odoo-functions.php:1299
+msgid "Import process has started for "
+msgstr "Importprocessen er startet for"
+
+#: includes/class-wc2odoo-functions.php:1446
+#: includes/class-wc2odoo-functions.php:2322
+#: includes/multi-company-files/class-wc-odoo-functions.php:1299
+#: includes/multi-company-files/class-wc-odoo-functions.php:2032
+msgid " products"
+msgstr "Produkter"
+
+#: includes/class-wc2odoo-functions.php:2270
+#: includes/multi-company-files/class-wc-odoo-functions.php:1993
+msgid "Product export is already running."
+msgstr "Produkteksport kører allerede."
+
+#: includes/class-wc2odoo-functions.php:2319
+#: includes/multi-company-files/class-wc-odoo-functions.php:2032
+msgid "Export process has started for "
+msgstr "Eksportprocessen er startet for"
+
+#: includes/class-wc2odoo-functions.php:3545
+#: includes/multi-company-files/class-wc-odoo-functions.php:2901
+msgid "Order Imported From Odoo"
+msgstr "Bestil importeret fra Odoo"
+
+#: includes/class-wc2odoo-functions.php:3692
+#: includes/multi-company-files/class-wc-odoo-functions.php:3023
+msgid "Woo Order Id : "
+msgstr "Woo ordre -id:"
+
+#: includes/class-wc2odoo-functions.php:4344
+#: includes/multi-company-files/class-wc-odoo-functions.php:3604
+msgid "Order status can't be changed from refunded."
+msgstr "Ordrestatus kan ikke ændres fra refunderet."
+
+#: includes/class-wc2odoo-functions.php:4419
+msgid "There was security vulnerability issues in your request."
+msgstr "Der var sikkerhedssårbarhedsproblemer i din anmodning."
+
+#: includes/tamplate-admin-setting-page.php:252
+#: odoo-for-woocommerce.php:311
+msgid "Settings"
+msgstr "Indstillinger"
+
+#: includes/tamplate-admin-setting-page.php:255
+msgid "Import"
+msgstr "Importere"
+
+#: includes/tamplate-admin-setting-page.php:258
+msgid "Export"
+msgstr "Eksport"
+
+#: includes/tamplate-admin-setting-page.php:281
+#: includes/tamplate-admin-setting-page.php:454
+msgid "Product Functions"
+msgstr "Produktfunktioner"
+
+#: includes/tamplate-admin-setting-page.php:301
+#: includes/tamplate-admin-setting-page.php:471
+msgid "Discount Functions"
+msgstr "Rabatfunktioner"
+
+#: includes/tamplate-admin-setting-page.php:321
+#: includes/tamplate-admin-setting-page.php:491
+msgid "Order Functions"
+msgstr "Ordrefunktioner"
+
+#: includes/tamplate-admin-setting-page.php:327
+#: includes/tamplate-admin-setting-page.php:331
+#: includes/tamplate-admin-setting-page.php:674
+#: includes/tamplate-admin-setting-page.php:678
+msgid "Customer Frequency"
+msgstr "Kundefrekvens"
+
+#: includes/tamplate-admin-setting-page.php:337
+#: includes/tamplate-admin-setting-page.php:684
+msgid "Select Customer Cron Frequency to Sync Customer"
+msgstr "Vælg kunde CRON -frekvens for at synkronisere kunde"
+
+#: includes/tamplate-admin-setting-page.php:343
+#: includes/tamplate-admin-setting-page.php:347
+msgid "Import/Update Customers"
+msgstr "Importer/opdateringskunder"
+
+#: includes/tamplate-admin-setting-page.php:357
+#: includes/tamplate-admin-setting-page.php:361
+#: includes/tamplate-admin-setting-page.php:704
+#: includes/tamplate-admin-setting-page.php:708
+msgid "Order Frequency"
+msgstr "Ordrefrekvens"
+
+#: includes/tamplate-admin-setting-page.php:367
+#: includes/tamplate-admin-setting-page.php:714
+msgid "Select Order Cron Frequency to Sync Order"
+msgstr "Vælg bestil CRON -frekvens for at synkronisere orden"
+
+#: includes/tamplate-admin-setting-page.php:373
+#: includes/tamplate-admin-setting-page.php:377
+msgid "Import Orders"
+msgstr "Importordrer"
+
+#: includes/tamplate-admin-setting-page.php:394
+#: includes/tamplate-admin-setting-page.php:398
+msgid "Order Refund Frequency"
+msgstr "Bestil refusionsfrekvens"
+
+#: includes/tamplate-admin-setting-page.php:404
+msgid "Select Refund Order Cron Frequency to Sync Refund Order"
+msgstr "Vælg Refusion Order CRON -frekvens for at synkronisere refusionsordren"
+
+#: includes/tamplate-admin-setting-page.php:410
+#: includes/tamplate-admin-setting-page.php:414
+msgid "Import Refund Orders"
+msgstr "Import refusionsordrer"
+
+#: includes/tamplate-admin-setting-page.php:427
+#: includes/tamplate-admin-setting-page.php:431
+msgid "Odoo Customer Sync"
+msgstr "Odoo kundesynkronisering"
+
+#: includes/tamplate-admin-setting-page.php:437
+#: includes/tamplate-admin-setting-page.php:751
+#: includes/tamplate-admin-setting-page.php:771
+msgid "Submit"
+msgstr "Indsend"
+
+#: includes/tamplate-admin-setting-page.php:438
+#: includes/tamplate-admin-setting-page.php:752
+#: includes/tamplate-admin-setting-page.php:772
+msgid "Please wait."
+msgstr "Vent venligst."
+
+#: includes/tamplate-admin-setting-page.php:497
+#: includes/tamplate-admin-setting-page.php:501
+msgid "Export Order On Checkout"
+msgstr "Eksportordre ved kassen"
+
+#: includes/tamplate-admin-setting-page.php:525
+msgid "If this setting is enabled the invoice will be marked as completed regardless of the order status. Status mapping will be skipped."
+msgstr "Hvis denne indstilling er aktiveret, markeres fakturaen som afsluttet uanset ordrestatus. Statuskortlægning springes over."
+
+#: includes/tamplate-admin-setting-page.php:534
+#: includes/tamplate-admin-setting-page.php:549
+msgid "Export Invoice should be enabled for this."
+msgstr "Eksportfaktura skal aktiveres til dette."
+
+#: includes/tamplate-admin-setting-page.php:564
+msgid "Custom Status Mapping."
+msgstr "Brugerdefineret status kortlægning."
+
+#: includes/tamplate-admin-setting-page.php:579
+msgid "This will only create Quote on Odoo. No Sales Order and invoice."
+msgstr "Dette skaber kun citat på Odoo. Ingen salgsordre og faktura."
+
+#: includes/tamplate-admin-setting-page.php:580
+msgid "Quote and Sales Order will be created. Invoice will not be created."
+msgstr "Citat og salgsordre oprettes. Faktura oprettes ikke."
+
+#: includes/tamplate-admin-setting-page.php:581
+msgid "Quote, Sales Order and Invoice will be created. Invoice will be in “In Payment“ State."
+msgstr "Citat, salgsordre og faktura oprettes. Faktura vil være i “i betaling” stat."
+
+#: includes/tamplate-admin-setting-page.php:582
+msgid "Quote, Sales Order and Invoice will be created. The invoice will be marked as PAID"
+msgstr "Citat, salgsordre og faktura oprettes. Fakturaen markeres som betalt"
+
+#: includes/tamplate-admin-setting-page.php:583
+msgid "Order will be marked as canceled"
+msgstr "Orden markeres som annulleret"
+
+#: includes/tamplate-admin-setting-page.php:593
+#: includes/tamplate-admin-setting-page.php:609
+#: includes/tamplate-admin-setting-page.php:641
+msgid "Woo Order Status"
+msgstr "Woo ordre status"
+
+#: includes/tamplate-admin-setting-page.php:596
+#: includes/tamplate-admin-setting-page.php:623
+#: includes/tamplate-admin-setting-page.php:655
+msgid "Odoo Order State"
+msgstr "Odoo Order State"
+
+#: includes/tamplate-admin-setting-page.php:611
+#: includes/tamplate-admin-setting-page.php:643
+msgid "Select Woo Status"
+msgstr "Vælg woo -status"
+
+#: includes/tamplate-admin-setting-page.php:618
+#: includes/tamplate-admin-setting-page.php:650
+msgid "Woo Status to Map."
+msgstr "Woo status til kort."
+
+#: includes/tamplate-admin-setting-page.php:625
+#: includes/tamplate-admin-setting-page.php:631
+#: includes/tamplate-admin-setting-page.php:657
+#: includes/tamplate-admin-setting-page.php:662
+#: assets/js/admin-settings.js:151
+msgid "Selected state's description."
+msgstr "Valgt stats beskrivelse."
+
+#: includes/tamplate-admin-setting-page.php:625
+#: includes/tamplate-admin-setting-page.php:657
+msgid "Select Odoo State"
+msgstr "Vælg Odoo State"
+
+#: includes/tamplate-admin-setting-page.php:669
+msgid "(+) Add More Mapping"
+msgstr "(+) Tilføj mere kortlægning"
+
+#: includes/tamplate-admin-setting-page.php:690
+#: includes/tamplate-admin-setting-page.php:694
+msgid "Export/Update Customers"
+msgstr "Eksport/opdateringskunder"
+
+#: includes/tamplate-admin-setting-page.php:720
+#: includes/tamplate-admin-setting-page.php:724
+msgid "Export Orders"
+msgstr "Eksportordrer"
+
+#: includes/tamplate-admin-setting-page.php:741
+#: includes/tamplate-admin-setting-page.php:745
+msgid "Product Sync"
+msgstr "Produktsynkronisering"
+
+#: includes/tamplate-admin-setting-page.php:761
+#: includes/tamplate-admin-setting-page.php:765
+msgid "Customer Sync"
+msgstr "Kundesynkronisering"
+
+#: includes/tamplate-admin-setting-page.php:816
+msgid "Product sync successfully."
+msgstr "Produktsynkronisering med succes."
+
+#: includes/tamplate-admin-setting-page.php:854
+msgid "Customer sync  successfully ."
+msgstr "Kundesynkronisering med succes."
+
+#: includes/tamplate-admin-setting-page.php:893
+msgid "Customer has been successfully sync."
+msgstr "Kunden har været med succes synkroniseret."
+
+#. translators: %d is replaced with the number of minutes conprising an interval
+#: includes/wp-background-processing/classes/wp-background-process.php:454
+msgid "Every %d Minutes"
+msgstr "Hvert %d minutter"
+
+#: odoo-for-woocommerce.php:70
+msgid "WooCommerce plugin is missing. Odoo for WooCommerce plugin requires WooCommerce."
+msgstr "WooCommerce -plugin mangler. Odoo til WooCommerce -plugin kræver WooCommerce."
+
+#: odoo-for-woocommerce.php:312
+msgid "Support"
+msgstr "Support"
+
+#: odoo-for-woocommerce.php:327
+msgid "Odoo Sync"
+msgstr "Odoo Sync"
+
+#: odoo-for-woocommerce.php:340
+msgid "Product Not to be synced"
+msgstr "Produktet ikke skal synkroniseres"
+
+#: odoo-for-woocommerce.php:343
+msgid "Not synced"
+msgstr "Ikke synkroniseret"
+
+#: odoo-for-woocommerce.php:357
+msgid "Exclude from Oddo"
+msgstr "Ekskluder fra Oddo"
+
+#~ msgid "Select Coupon  Cron  to sync Coupon"
+#~ msgstr "Vælg kupon cron for at synkronisere kupon"

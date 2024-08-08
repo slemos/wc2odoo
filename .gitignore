@@ -1,0 +1,7 @@
+/node_modules
+/vendor
+/includes/test.php
+/wordpress
+composer.lock
+package-lock.json
+wc2odoo.zip

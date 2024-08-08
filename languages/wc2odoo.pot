@@ -1,0 +1,952 @@
+# Copyright (C) 2024 Sebastian Lemos
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WC2odoo 0.3.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wc2odoo\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-02-06T16:30:46-04:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: wc2odoo\n"
+
+#. Plugin Name of the plugin
+msgid "WC2odoo"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://github.com/slemos"
+msgstr ""
+
+#. Description of the plugin
+msgid "Plugin for integrating WooCommerce with Odoo."
+msgstr ""
+
+#. Author of the plugin
+msgid "Sebastian Lemos"
+msgstr ""
+
+#. translators: 1: Strong Tag start, 2: Strong Tag end, 3: link start 4: link end.
+#: includes/class-wc2odoo-common-functions.php:107
+msgid "%1$s WooCommerce ODOO Integration is almost ready. %2$s To get started, %3$s go to ODOO Account Settings %4$s and Set Odoo details and click save button."
+msgstr ""
+
+#. translators: 1: Strong Tag start, 2: Strong Tag end, 3: link start 4: link end.
+#: includes/class-wc2odoo-common-functions.php:110
+msgid "%1$s WooCommerce ODOO Integration is almost ready. %2$s To get started, %3$s go to ODOO Account Settings %4$s and %1$s Set Odoo Tax, Shipping Tax details and Sale Invoice Journal %2$s and click save button."
+msgstr ""
+
+#. translators: 1: Strong Tag start, 2: Strong Tag end, 3: link start 4: link end.
+#: includes/class-wc2odoo-common-functions.php:219
+msgid "%1$s WooCommerce ODOO Integration Server URL is Invalid. %2$s Please verify ODOO Credentials & %3$s go to ODOO Account Settings %4$s and Set Odoo details and click save button."
+msgstr ""
+
+#. translators: 1: Strong Tag start, 2: Strong Tag end, 3: link start 4: link end.
+#: includes/class-wc2odoo-common-functions.php:223
+msgid "%1$s WooCommerce ODOO Integration credentials are Invalid. %2$s Please verify ODOO credentials & %3$s go to ODOO Account Settings %4$s and Set Odoo details and click save button."
+msgstr ""
+
+#: includes/class-wc2odoo-functions.php:932
+msgid "WC Shipping Charge"
+msgstr ""
+
+#: includes/class-wc2odoo-functions.php:937
+msgid "delivery product created by wc2odoo Integration"
+msgstr ""
+
+#: includes/class-wc2odoo-functions.php:1269
+msgid "Import process has started for "
+msgstr ""
+
+#: includes/class-wc2odoo-functions.php:1272
+#: includes/class-wc2odoo-functions.php:1936
+msgid " products"
+msgstr ""
+
+#: includes/class-wc2odoo-functions.php:1888
+msgid "Product export is already running."
+msgstr ""
+
+#: includes/class-wc2odoo-functions.php:1933
+msgid "Export process has started for "
+msgstr ""
+
+#: includes/class-wc2odoo-functions.php:3158
+msgid "Order Imported From Odoo"
+msgstr ""
+
+#: includes/class-wc2odoo-functions.php:3324
+msgid "Woo Order Id : "
+msgstr ""
+
+#: includes/class-wc2odoo-functions.php:3945
+msgid "Order status can't be changed from refunded."
+msgstr ""
+
+#: includes/class-wc2odoo-functions.php:4025
+msgid "There was security vulnerability issues in your request."
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:147
+#: includes/template-admin-setting-page.php:269
+msgid "ODOO Integration"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:148
+msgid "Sync WooCommerce Customer,Product and Order to Odoo ERP."
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:148
+msgid "Important Note"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:148
+msgid "Fill The Address Details for company. (Settings -> General Settings -> Manage Companies)"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:148
+msgid "Change Invoice Quantity Setting. (Settings -> Sales -> Invoicing -> Select Invoice what is ordered )"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:209
+msgid "Odoo credentials are not valid."
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:215
+msgid "Odoo Host url is not valid."
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:221
+msgid "Please provide valid Odoo credentials to connect."
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:228
+msgid "Odoo account is connected."
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:284
+msgid "Enable Logging"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:285
+msgid "Log ODOO events, such as API requests."
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:288
+#: includes/class-wc2odoo-integration-settings.php:290
+msgid "View Log"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:296
+msgid "Select Odoo Version"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:298
+msgid "Odoo Version"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:306
+msgid "Select Odoo version for your CRM"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:311
+msgid "Server URL"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:313
+msgid "Insert Database server URL. You can find it in your Odoo account"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:319
+msgid "Database Name"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:321
+msgid "Insert database name. You can find it in your Odoo account."
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:327
+msgid "Username"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:329
+msgid "Insert username. You can find it in your Odoo account."
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:335
+#: assets/build/app.js:1
+#: assets/js/admin-settings.js:102
+msgid "Password"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:337
+#: assets/build/app.js:1
+#: assets/js/admin-settings.js:103
+msgid "Insert password for your API access user"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:343
+msgid "Debug Log"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:351
+#: includes/class-wc2odoo-integration-settings.php:353
+msgid "Odoo SKU Mapping"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:356
+msgid "Internal Reference"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:357
+msgid "Barcode"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:359
+msgid "Odoo SKU Mapping for your CRM"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:364
+#: includes/class-wc2odoo-integration-settings.php:366
+msgid "Import Products Frequency"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:369
+#: includes/class-wc2odoo-integration-settings.php:428
+#: includes/class-wc2odoo-integration-settings.php:449
+#: includes/class-wc2odoo-integration-settings.php:477
+#: includes/class-wc2odoo-integration-settings.php:497
+#: includes/class-wc2odoo-integration-settings.php:516
+#: includes/class-wc2odoo-integration-settings.php:547
+#: includes/class-wc2odoo-integration-settings.php:559
+#: includes/class-wc2odoo-integration-settings.php:588
+#: includes/class-wc2odoo-integration-settings.php:648
+#: includes/class-wc2odoo-integration-settings.php:669
+#: includes/class-wc2odoo-integration-settings.php:697
+#: includes/class-wc2odoo-integration-settings.php:746
+#: includes/class-wc2odoo-integration-settings.php:794
+#: includes/class-wc2odoo-integration-settings.php:824
+#: includes/template-admin-setting-page.php:251
+msgid "Every Hour"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:370
+#: includes/class-wc2odoo-integration-settings.php:429
+#: includes/class-wc2odoo-integration-settings.php:450
+#: includes/class-wc2odoo-integration-settings.php:478
+#: includes/class-wc2odoo-integration-settings.php:498
+#: includes/class-wc2odoo-integration-settings.php:517
+#: includes/class-wc2odoo-integration-settings.php:548
+#: includes/class-wc2odoo-integration-settings.php:560
+#: includes/class-wc2odoo-integration-settings.php:589
+#: includes/class-wc2odoo-integration-settings.php:649
+#: includes/class-wc2odoo-integration-settings.php:670
+#: includes/class-wc2odoo-integration-settings.php:698
+#: includes/class-wc2odoo-integration-settings.php:747
+#: includes/class-wc2odoo-integration-settings.php:795
+#: includes/class-wc2odoo-integration-settings.php:825
+#: includes/template-admin-setting-page.php:252
+msgid "Twice A Day"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:371
+#: includes/class-wc2odoo-integration-settings.php:430
+#: includes/class-wc2odoo-integration-settings.php:451
+#: includes/class-wc2odoo-integration-settings.php:479
+#: includes/class-wc2odoo-integration-settings.php:499
+#: includes/class-wc2odoo-integration-settings.php:518
+#: includes/class-wc2odoo-integration-settings.php:549
+#: includes/class-wc2odoo-integration-settings.php:561
+#: includes/class-wc2odoo-integration-settings.php:590
+#: includes/class-wc2odoo-integration-settings.php:650
+#: includes/class-wc2odoo-integration-settings.php:671
+#: includes/class-wc2odoo-integration-settings.php:699
+#: includes/class-wc2odoo-integration-settings.php:748
+#: includes/class-wc2odoo-integration-settings.php:796
+#: includes/class-wc2odoo-integration-settings.php:826
+#: includes/template-admin-setting-page.php:253
+msgid "Once A Day"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:373
+msgid "Import Products Data Frequency"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:377
+#: includes/class-wc2odoo-integration-settings.php:379
+#: includes/class-wc2odoo-integration-settings.php:381
+msgid "Import Products"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:384
+msgid "Manual Import Products"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:391
+#: includes/class-wc2odoo-integration-settings.php:393
+#: includes/class-wc2odoo-integration-settings.php:395
+msgid "Exclude PoS Products"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:399
+#: includes/class-wc2odoo-integration-settings.php:401
+#: includes/class-wc2odoo-integration-settings.php:403
+#: includes/class-wc2odoo-integration-settings.php:619
+#: includes/class-wc2odoo-integration-settings.php:621
+#: includes/class-wc2odoo-integration-settings.php:623
+msgid "Update Products"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:407
+#: includes/class-wc2odoo-integration-settings.php:409
+#: includes/class-wc2odoo-integration-settings.php:411
+#: includes/class-wc2odoo-integration-settings.php:627
+#: includes/class-wc2odoo-integration-settings.php:629
+#: includes/class-wc2odoo-integration-settings.php:631
+msgid "Synchronize Stocks"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:415
+#: includes/class-wc2odoo-integration-settings.php:417
+#: includes/class-wc2odoo-integration-settings.php:419
+#: includes/class-wc2odoo-integration-settings.php:635
+#: includes/class-wc2odoo-integration-settings.php:637
+#: includes/class-wc2odoo-integration-settings.php:639
+msgid "Synchronize Price"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:423
+#: includes/class-wc2odoo-integration-settings.php:425
+msgid "Import Categories Frequency"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:432
+msgid "Category Sync Frequency"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:436
+#: includes/class-wc2odoo-integration-settings.php:438
+#: includes/class-wc2odoo-integration-settings.php:440
+msgid "Import Categories"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:444
+#: includes/class-wc2odoo-integration-settings.php:446
+msgid "Import Attribute Frequency"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:453
+msgid "Select Attribute Cron Frequency to Sync Attribute"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:457
+#: includes/class-wc2odoo-integration-settings.php:459
+#: includes/class-wc2odoo-integration-settings.php:461
+msgid "Import Attribute"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:465
+#: includes/class-wc2odoo-integration-settings.php:467
+#: includes/class-wc2odoo-integration-settings.php:685
+#: includes/class-wc2odoo-integration-settings.php:687
+msgid "Update Order Status"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:472
+#: includes/class-wc2odoo-integration-settings.php:474
+#: includes/class-wc2odoo-integration-settings.php:692
+#: includes/class-wc2odoo-integration-settings.php:694
+msgid "Update Order Status Frequency"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:484
+#: includes/class-wc2odoo-integration-settings.php:486
+#: includes/class-wc2odoo-integration-settings.php:488
+msgid "Import/Update Customer"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:492
+#: includes/class-wc2odoo-integration-settings.php:494
+msgid "Import/Update Customer Frequency"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:504
+#: includes/class-wc2odoo-integration-settings.php:506
+msgid "Import Order"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:511
+#: includes/class-wc2odoo-integration-settings.php:513
+msgid "Import Order Frequency"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:524
+#: includes/class-wc2odoo-integration-settings.php:802
+#: includes/template-admin-setting-page.php:384
+#: includes/template-admin-setting-page.php:438
+#: includes/template-admin-setting-page.php:733
+#: includes/template-admin-setting-page.php:772
+#: includes/template-admin-setting-page.php:792
+msgid "From"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:530
+#: includes/class-wc2odoo-integration-settings.php:808
+#: includes/template-admin-setting-page.php:386
+#: includes/template-admin-setting-page.php:440
+#: includes/template-admin-setting-page.php:735
+#: includes/template-admin-setting-page.php:774
+#: includes/template-admin-setting-page.php:794
+msgid "To"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:535
+#: includes/class-wc2odoo-integration-settings.php:537
+msgid "Import Refund Order"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:542
+#: includes/class-wc2odoo-integration-settings.php:544
+msgid "Import Refund Order Frequency"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:554
+#: includes/class-wc2odoo-integration-settings.php:556
+msgid "Import Coupon Frequency"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:563
+#: includes/class-wc2odoo-integration-settings.php:828
+msgid "Select Coupon Cron Frequency to sync Coupon"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:567
+#: includes/class-wc2odoo-integration-settings.php:569
+msgid "Import Coupon"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:571
+#: includes/class-wc2odoo-integration-settings.php:579
+msgid "Select Coupon Cron to sync Coupon"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:575
+#: includes/class-wc2odoo-integration-settings.php:577
+#: includes/class-wc2odoo-integration-settings.php:840
+#: includes/class-wc2odoo-integration-settings.php:842
+msgid "Update Coupon"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:583
+#: includes/class-wc2odoo-integration-settings.php:585
+#: includes/class-wc2odoo-integration-settings.php:592
+msgid "Export Products Frequency"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:596
+msgid "Exclude Product by Categories"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:598
+msgid "Exclude Products by Categories"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:601
+msgid "Exclude products by categories not to export"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:605
+#: includes/class-wc2odoo-integration-settings.php:607
+#: includes/class-wc2odoo-integration-settings.php:609
+msgid "Export Products"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:612
+msgid "Manual Export Products"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:643
+#: includes/class-wc2odoo-integration-settings.php:645
+msgid "Export Categories Frequency"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:652
+msgid "Select Category Cron Frequency to sync Category"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:656
+#: includes/class-wc2odoo-integration-settings.php:658
+#: includes/class-wc2odoo-integration-settings.php:660
+msgid "Export Categories"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:664
+#: includes/class-wc2odoo-integration-settings.php:666
+msgid "Export Attribute Frequency"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:673
+msgid "Select Attribute Cron Frequency to sync Attribute"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:677
+#: includes/class-wc2odoo-integration-settings.php:679
+#: includes/class-wc2odoo-integration-settings.php:681
+msgid "Export Attribute"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:704
+#: includes/class-wc2odoo-integration-settings.php:706
+msgid "Export order On Checkout"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:711
+#: includes/class-wc2odoo-integration-settings.php:713
+#: includes/template-admin-setting-page.php:514
+#: includes/template-admin-setting-page.php:518
+msgid "Export Invoice"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:718
+#: includes/class-wc2odoo-integration-settings.php:720
+#: includes/template-admin-setting-page.php:528
+#: includes/template-admin-setting-page.php:532
+msgid "Mark Invoice Paid"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:722
+#: includes/class-wc2odoo-integration-settings.php:730
+msgid "Export Invoice option should be enabled for this."
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:726
+#: includes/class-wc2odoo-integration-settings.php:728
+#: includes/template-admin-setting-page.php:543
+#: includes/template-admin-setting-page.php:547
+msgid "Export Refund Order"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:734
+#: includes/class-wc2odoo-integration-settings.php:736
+msgid "Export/Update Customer"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:741
+#: includes/class-wc2odoo-integration-settings.php:743
+msgid "Export/Update Customer Frequency"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:753
+#: includes/class-wc2odoo-integration-settings.php:755
+msgid "Export Order"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:760
+#: includes/class-wc2odoo-integration-settings.php:762
+#: includes/template-admin-setting-page.php:558
+#: includes/template-admin-setting-page.php:562
+msgid "Status Mapping"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:767
+#: includes/class-wc2odoo-integration-settings.php:769
+#: includes/class-wc2odoo-integration-settings.php:775
+#: includes/class-wc2odoo-integration-settings.php:777
+#: includes/template-admin-setting-page.php:591
+msgid "Order Status Mapping"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:780
+#: includes/template-admin-setting-page.php:575
+msgid "Quote Only"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:781
+#: includes/template-admin-setting-page.php:576
+msgid "Quote and Sales Order"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:782
+#: includes/template-admin-setting-page.php:577
+msgid "In Payment Invoice"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:783
+#: includes/template-admin-setting-page.php:578
+msgid "Paid Invoice"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:784
+#: includes/template-admin-setting-page.php:579
+msgid "Cancelled"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:789
+#: includes/class-wc2odoo-integration-settings.php:791
+msgid "Export Order Frequency"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:819
+#: includes/class-wc2odoo-integration-settings.php:821
+msgid "Export Coupon Frequency"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:832
+#: includes/class-wc2odoo-integration-settings.php:834
+msgid "Export Coupon"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:836
+msgid "Select Coupon to sync Coupon"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:844
+msgid "Update Coupon to Odoo"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:868
+#: includes/class-wc2odoo-integration-settings.php:870
+msgid "Select Company"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:874
+msgid "Select Company for your CRM"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:878
+#: includes/class-wc2odoo-integration-settings.php:880
+msgid "Select Sale Invoice Journal"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:884
+msgid "Select Sale Journal for Odoo invoices"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:888
+#: includes/class-wc2odoo-integration-settings.php:890
+msgid "Select Tax Type"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:894
+#: includes/class-wc2odoo-integration-settings.php:904
+msgid "Select tax term for Odoo invoices"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:898
+#: includes/class-wc2odoo-integration-settings.php:900
+msgid "Select Shipping Tax Type"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:908
+#: includes/class-wc2odoo-integration-settings.php:910
+msgid "Use Fiscal Positions"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:915
+msgid "Select Fiscal P=osition"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:917
+msgid "Select Fiscal  Position"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:921
+msgid "Select Fiscal Position"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:1067
+#: assets/build/app.js:1
+#: assets/js/admin-settings.js:231
+msgid "-- Select Invoice Journal --"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:1094
+#: assets/build/app.js:1
+#: assets/js/admin-settings.js:230
+msgid "-- Select Tax Type --"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:1119
+#: assets/build/app.js:1
+#: assets/js/admin-settings.js:197
+#: assets/js/admin-settings.js:208
+msgid "-- Select Fiscal Position --"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:1161
+msgid "-- Select Company --"
+msgstr ""
+
+#: includes/class-wc2odoo-integration-settings.php:1183
+msgid "-- Select Categories --"
+msgstr ""
+
+#: includes/class-wc2odoo-integration.php:251
+#: includes/template-admin-setting-page.php:260
+msgid "Settings"
+msgstr ""
+
+#: includes/class-wc2odoo-integration.php:252
+msgid "Support"
+msgstr ""
+
+#: includes/class-wc2odoo-integration.php:266
+msgid "Odoo Sync"
+msgstr ""
+
+#: includes/class-wc2odoo-integration.php:283
+msgid "Product Not to be synced"
+msgstr ""
+
+#: includes/class-wc2odoo-integration.php:285
+msgid "Not synced"
+msgstr ""
+
+#: includes/class-wc2odoo-integration.php:298
+msgid "Exclude from Oddo"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:263
+msgid "Import"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:266
+msgid "Export"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:288
+#: includes/template-admin-setting-page.php:459
+msgid "Product Functions"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:307
+#: includes/template-admin-setting-page.php:475
+msgid "Discount Functions"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:326
+#: includes/template-admin-setting-page.php:494
+msgid "Order Functions"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:332
+#: includes/template-admin-setting-page.php:336
+#: includes/template-admin-setting-page.php:681
+#: includes/template-admin-setting-page.php:685
+msgid "Customer Frequency"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:342
+#: includes/template-admin-setting-page.php:691
+msgid "Select Customer Cron Frequency to Sync Customer"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:348
+#: includes/template-admin-setting-page.php:352
+msgid "Import/Update Customers"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:362
+#: includes/template-admin-setting-page.php:366
+#: includes/template-admin-setting-page.php:711
+#: includes/template-admin-setting-page.php:715
+msgid "Order Frequency"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:372
+#: includes/template-admin-setting-page.php:721
+msgid "Select Order Cron Frequency to Sync Order"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:378
+#: includes/template-admin-setting-page.php:382
+msgid "Import Orders"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:399
+#: includes/template-admin-setting-page.php:403
+msgid "Order Refund Frequency"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:409
+msgid "Select Refund Order Cron Frequency to Sync Refund Order"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:415
+#: includes/template-admin-setting-page.php:419
+msgid "Import Refund Orders"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:432
+#: includes/template-admin-setting-page.php:436
+msgid "Odoo Customer Sync"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:442
+#: includes/template-admin-setting-page.php:741
+#: includes/template-admin-setting-page.php:757
+#: includes/template-admin-setting-page.php:776
+#: includes/template-admin-setting-page.php:796
+msgid "Submit"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:443
+#: includes/template-admin-setting-page.php:742
+#: includes/template-admin-setting-page.php:758
+#: includes/template-admin-setting-page.php:777
+#: includes/template-admin-setting-page.php:797
+msgid "Please wait."
+msgstr ""
+
+#: includes/template-admin-setting-page.php:500
+#: includes/template-admin-setting-page.php:504
+msgid "Export Order On Checkout"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:528
+msgid "If this setting is enabled the invoice will be marked as completed regardless of the order status. Status mapping will be skipped."
+msgstr ""
+
+#: includes/template-admin-setting-page.php:537
+#: includes/template-admin-setting-page.php:552
+msgid "Export Invoice should be enabled for this."
+msgstr ""
+
+#: includes/template-admin-setting-page.php:567
+msgid "Custom Status Mapping."
+msgstr ""
+
+#: includes/template-admin-setting-page.php:582
+msgid "This will only create Quote on Odoo. No Sales Order and invoice."
+msgstr ""
+
+#: includes/template-admin-setting-page.php:583
+msgid "Quote and Sales Order will be created. Invoice will not be created."
+msgstr ""
+
+#: includes/template-admin-setting-page.php:584
+msgid "Quote, Sales Order and Invoice will be created. Invoice will be in “In Payment“ State."
+msgstr ""
+
+#: includes/template-admin-setting-page.php:585
+msgid "Quote, Sales Order and Invoice will be created. The invoice will be marked as PAID"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:586
+msgid "Order will be marked as canceled"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:596
+#: includes/template-admin-setting-page.php:613
+#: includes/template-admin-setting-page.php:648
+msgid "Woo Order Status"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:599
+#: includes/template-admin-setting-page.php:627
+#: includes/template-admin-setting-page.php:662
+msgid "Odoo Order State"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:615
+#: includes/template-admin-setting-page.php:650
+msgid "Select Woo Status"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:622
+#: includes/template-admin-setting-page.php:657
+msgid "Woo Status to Map."
+msgstr ""
+
+#: includes/template-admin-setting-page.php:629
+#: includes/template-admin-setting-page.php:635
+#: includes/template-admin-setting-page.php:664
+#: includes/template-admin-setting-page.php:669
+#: assets/build/app.js:1
+#: assets/js/admin-settings.js:151
+msgid "Selected state's description."
+msgstr ""
+
+#: includes/template-admin-setting-page.php:629
+#: includes/template-admin-setting-page.php:664
+msgid "Select Odoo State"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:676
+msgid "(+) Add More Mapping"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:697
+#: includes/template-admin-setting-page.php:701
+msgid "Export/Update Customers"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:727
+#: includes/template-admin-setting-page.php:731
+#: includes/template-admin-setting-page.php:750
+#: includes/template-admin-setting-page.php:754
+msgid "Export Orders"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:756
+msgid "Order"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:766
+#: includes/template-admin-setting-page.php:770
+msgid "Product Sync"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:786
+#: includes/template-admin-setting-page.php:790
+msgid "Customer Sync"
+msgstr ""
+
+#: includes/template-admin-setting-page.php:841
+msgid "Product sync successfully."
+msgstr ""
+
+#: includes/template-admin-setting-page.php:879
+msgid "Customer sync  successfully ."
+msgstr ""
+
+#: includes/template-admin-setting-page.php:915
+#: includes/template-admin-setting-page.php:954
+msgid "Orders sync successfully: "
+msgstr ""
+
+#: includes/template-admin-setting-page.php:993
+msgid "Customer has been successfully sync."
+msgstr ""
+
+#: wc2odoo.php:51
+msgid "WooCommerce plugin is missing. Odoo for WooCommerce plugin requires WooCommerce."
+msgstr ""
+
+#: assets/build/app.js:1
+#: assets/js/admin-settings.js:99
+msgid "Password/Api Key"
+msgstr ""
+
+#: assets/build/app.js:1
+#: assets/js/admin-settings.js:100
+msgid "Insert password/API Key for your API access user"
+msgstr ""
+
+#: assets/build/app.js:1
+#: assets/js/admin-settings.js:171
+msgid "State already mapped!!"
+msgstr ""
+
+#: assets/build/app.js:1
+#: assets/js/admin-settings.js:187
+#: assets/js/admin-settings.js:216
+#: assets/js/admin-settings.js:217
+#: assets/js/admin-settings.js:218
+msgid "Fetching options..."
+msgstr ""

@@ -1,0 +1,938 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo for Woocommerce 3.4.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/odoo-for-woocommerce\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-05-07T19:41:22+00:00\n"
+"PO-Revision-Date: 2023-05-08 08:04+0530\n"
+"Language: zh\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Domain: odoo-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+msgid "Odoo for Woocommerce"
+msgstr "WooCommerce的Odoo"
+
+#. Plugin URI of the plugin
+msgid "https://woocommerce.com/products/odoo-for-woocommerce/"
+msgstr "https://woocommerce.com/products/odoo-for-woocommerce/"
+
+#. Description of the plugin
+msgid "Create customer In ODOO and create invoice when order is placed."
+msgstr "在ODOO中创建客户，并在下订单时创建发票。"
+
+#. Author of the plugin
+msgid "OPMC"
+msgstr "OPMC"
+
+#. Author URI of the plugin
+msgid "https://woocommerce.com"
+msgstr "https://woocommerce.com"
+
+#. translators: 1: Strong Tag start, 2: Strong Tag end, 3: link start 4: link end.
+#: includes/class-common-functions.php:47
+msgid "%1$s WooCommerce ODOO Integration is almost ready. %2$s To get started, %3$s go to ODOO Account Settings %4$s and Set Odoo details and click save button."
+msgstr "%1$s WooCommerce ODOO 集成即将准备就绪。 %2$s 要开始，%3$s 转到 ODOO 帐户设置 %4$s 和设置 Odoo 详细信息，然后单击保存按钮。"
+
+#. translators: 1: Strong Tag start, 2: Strong Tag end, 3: link start 4: link end.
+#: includes/class-common-functions.php:50
+msgid "%1$s WooCommerce ODOO Integration is almost ready. %2$s To get started, %3$s go to ODOO Account Settings %4$s and %1$s Set Odoo Tax, Shipping Tax details and Sale Invoice Journal %2$s and click save button."
+msgstr "%1$s WooCommerce ODOO 集成即将准备就绪。 %2$s 要开始，%3$s 转到 ODOO 帐户设置 %4$s 和 %1$s 设置 Odoo 税、运输税详细信息和销售发票日志 %2$s 并单击保存按钮。"
+
+#. translators: 1: Strong Tag start, 2: Strong Tag end, 3: link start 4: link end.
+#: includes/class-common-functions.php:160
+msgid "%1$s WooCommerce ODOO Integration Server URL is Invalid. %2$s Please verify ODOO Credentials & %3$s go to ODOO Account Settings %4$s and Set Odoo details and click save button."
+msgstr "%1$s WooCommerce ODOO 集成服务器 URL 无效。 %2$s 请验证 ODOO 凭据 & %3$s 转到 ODOO 帐户设置 %4$s 并设置 Odoo 详细信息并单击保存按钮。"
+
+#. translators: 1: Strong Tag start, 2: Strong Tag end, 3: link start 4: link end.
+#: includes/class-common-functions.php:164
+msgid "%1$s WooCommerce ODOO Integration credentials are Invalid. %2$s Please verify ODOO credentials & %3$s go to ODOO Account Settings %4$s and Set Odoo details and click save button."
+msgstr "%1$s WooCommerce ODOO 集成凭据无效。 %2$s 请验证 ODOO 凭据 & %3$s 转到 ODOO 帐户设置 %4$s 并设置 Odoo 详细信息并单击保存按钮。"
+
+#: includes/class-wc-odoo-admin-settings.php:24
+#: includes/tamplate-admin-setting-page.php:261
+msgid "ODOO Integration"
+msgstr "ODOO集成"
+
+#: includes/class-wc-odoo-admin-settings.php:25
+msgid "Sync WooCommerce Customer,Product and Order to Odoo ERP."
+msgstr "同步WooCommerce客户，产品和订单ODOO ERP。"
+
+#: includes/class-wc-odoo-admin-settings.php:25
+msgid "Important Note"
+msgstr "重要的提示"
+
+#: includes/class-wc-odoo-admin-settings.php:25
+msgid "Fill The Address Details for company. (Settings -> General Settings -> Manage Companies)"
+msgstr "填写公司的地址详细信息。 （设置 - >一般设置 - >管理公司）"
+
+#: includes/class-wc-odoo-admin-settings.php:25
+msgid "Change Invoice Quantity Setting. (Settings -> Sales -> Invoicing -> Select Invoice what is ordered )"
+msgstr "更改发票数量设置。 （设置 - >销售 - >开票 - >选择发票的订购）"
+
+#: includes/class-wc-odoo-admin-settings.php:92
+msgid "Odoo credentials are not valid."
+msgstr "ODOO凭证无效。"
+
+#: includes/class-wc-odoo-admin-settings.php:98
+msgid "Odoo Host url is not valid."
+msgstr "ODOO主机URL无效。"
+
+#: includes/class-wc-odoo-admin-settings.php:104
+msgid "Please provide valid Odoo credentials to connect."
+msgstr "请提供有效的ODOO凭据以连接。"
+
+#: includes/class-wc-odoo-admin-settings.php:111
+msgid "Odoo account is connected."
+msgstr "ODOO帐户已连接。"
+
+#: includes/class-wc-odoo-admin-settings.php:157
+msgid "Enable Logging"
+msgstr "启用记录"
+
+#: includes/class-wc-odoo-admin-settings.php:158
+msgid "Log ODOO events, such as API requests."
+msgstr "日志ODOO事件，例如API请求。"
+
+#: includes/class-wc-odoo-admin-settings.php:161
+#: includes/class-wc-odoo-admin-settings.php:163
+msgid "View Log"
+msgstr "查看日志"
+
+#: includes/class-wc-odoo-admin-settings.php:169
+msgid "Select Odoo Version"
+msgstr "选择ODOO版本"
+
+#: includes/class-wc-odoo-admin-settings.php:171
+msgid "Odoo Version"
+msgstr "odoo版本"
+
+#: includes/class-wc-odoo-admin-settings.php:179
+msgid "Select Odoo version for your CRM"
+msgstr "为您的CRM选择ODOO版本"
+
+#: includes/class-wc-odoo-admin-settings.php:184
+msgid "Server URL"
+msgstr "服务器URL"
+
+#: includes/class-wc-odoo-admin-settings.php:186
+msgid "Insert Database server URL. You can find it in your Odoo account"
+msgstr "插入数据库服务器URL。您可以在ODOO帐户中找到它"
+
+#: includes/class-wc-odoo-admin-settings.php:193
+msgid "Database Name"
+msgstr "数据库名称"
+
+#: includes/class-wc-odoo-admin-settings.php:195
+msgid "Insert database name. You can find it in your Odoo account."
+msgstr "插入数据库名称。您可以在ODOO帐户中找到它。"
+
+#: includes/class-wc-odoo-admin-settings.php:201
+msgid "Username"
+msgstr "用户名"
+
+#: includes/class-wc-odoo-admin-settings.php:203
+msgid "Insert username. You can find it in your Odoo account."
+msgstr "插入用户名。您可以在ODOO帐户中找到它。"
+
+#: includes/class-wc-odoo-admin-settings.php:209
+#: assets/js/admin-settings.js:102
+msgid "Password"
+msgstr "密码"
+
+#: includes/class-wc-odoo-admin-settings.php:211
+#: assets/js/admin-settings.js:103
+msgid "Insert password for your API access user"
+msgstr "插入API访问用户的密码"
+
+#: includes/class-wc-odoo-admin-settings.php:217
+msgid "Debug Log"
+msgstr "调试日志"
+
+#: includes/class-wc-odoo-admin-settings.php:225
+#: includes/class-wc-odoo-admin-settings.php:227
+msgid "Odoo SKU Mapping"
+msgstr "ODOO SKU映射"
+
+#: includes/class-wc-odoo-admin-settings.php:230
+msgid "Internal Reference"
+msgstr "内部参考"
+
+#: includes/class-wc-odoo-admin-settings.php:231
+msgid "Barcode"
+msgstr "条码"
+
+#: includes/class-wc-odoo-admin-settings.php:234
+msgid "Odoo SKU Mapping for your CRM"
+msgstr "odoo sku映射为您的CRM"
+
+#: includes/class-wc-odoo-admin-settings.php:289
+#: includes/class-wc-odoo-admin-settings.php:291
+msgid "Import Products Frequency"
+msgstr "进口产品频率"
+
+#: includes/class-wc-odoo-admin-settings.php:294
+#: includes/class-wc-odoo-admin-settings.php:353
+#: includes/class-wc-odoo-admin-settings.php:374
+#: includes/class-wc-odoo-admin-settings.php:403
+#: includes/class-wc-odoo-admin-settings.php:423
+#: includes/class-wc-odoo-admin-settings.php:442
+#: includes/class-wc-odoo-admin-settings.php:473
+#: includes/class-wc-odoo-admin-settings.php:485
+#: includes/class-wc-odoo-admin-settings.php:514
+#: includes/class-wc-odoo-admin-settings.php:574
+#: includes/class-wc-odoo-admin-settings.php:595
+#: includes/class-wc-odoo-admin-settings.php:623
+#: includes/class-wc-odoo-admin-settings.php:673
+#: includes/class-wc-odoo-admin-settings.php:722
+#: includes/class-wc-odoo-admin-settings.php:746
+#: includes/tamplate-admin-setting-page.php:243
+msgid "Every Hour"
+msgstr "每隔一小时"
+
+#: includes/class-wc-odoo-admin-settings.php:295
+#: includes/class-wc-odoo-admin-settings.php:354
+#: includes/class-wc-odoo-admin-settings.php:375
+#: includes/class-wc-odoo-admin-settings.php:404
+#: includes/class-wc-odoo-admin-settings.php:424
+#: includes/class-wc-odoo-admin-settings.php:443
+#: includes/class-wc-odoo-admin-settings.php:474
+#: includes/class-wc-odoo-admin-settings.php:486
+#: includes/class-wc-odoo-admin-settings.php:515
+#: includes/class-wc-odoo-admin-settings.php:575
+#: includes/class-wc-odoo-admin-settings.php:596
+#: includes/class-wc-odoo-admin-settings.php:624
+#: includes/class-wc-odoo-admin-settings.php:674
+#: includes/class-wc-odoo-admin-settings.php:723
+#: includes/class-wc-odoo-admin-settings.php:747
+#: includes/tamplate-admin-setting-page.php:244
+msgid "Twice A Day"
+msgstr "每天两次"
+
+#: includes/class-wc-odoo-admin-settings.php:296
+#: includes/class-wc-odoo-admin-settings.php:355
+#: includes/class-wc-odoo-admin-settings.php:376
+#: includes/class-wc-odoo-admin-settings.php:405
+#: includes/class-wc-odoo-admin-settings.php:425
+#: includes/class-wc-odoo-admin-settings.php:444
+#: includes/class-wc-odoo-admin-settings.php:475
+#: includes/class-wc-odoo-admin-settings.php:487
+#: includes/class-wc-odoo-admin-settings.php:516
+#: includes/class-wc-odoo-admin-settings.php:576
+#: includes/class-wc-odoo-admin-settings.php:597
+#: includes/class-wc-odoo-admin-settings.php:625
+#: includes/class-wc-odoo-admin-settings.php:675
+#: includes/class-wc-odoo-admin-settings.php:724
+#: includes/class-wc-odoo-admin-settings.php:748
+#: includes/tamplate-admin-setting-page.php:245
+msgid "Once A Day"
+msgstr "一天一次"
+
+#: includes/class-wc-odoo-admin-settings.php:298
+msgid "Import Products Data Frequency"
+msgstr "进口产品数据频率"
+
+#: includes/class-wc-odoo-admin-settings.php:302
+#: includes/class-wc-odoo-admin-settings.php:304
+#: includes/class-wc-odoo-admin-settings.php:306
+msgid "Import Products"
+msgstr "进口产品"
+
+#: includes/class-wc-odoo-admin-settings.php:309
+msgid "Manual Import Products"
+msgstr "手动进口产品"
+
+#: includes/class-wc-odoo-admin-settings.php:316
+#: includes/class-wc-odoo-admin-settings.php:318
+#: includes/class-wc-odoo-admin-settings.php:320
+msgid "Exclude PoS Products"
+msgstr "排除POS产品"
+
+#: includes/class-wc-odoo-admin-settings.php:324
+#: includes/class-wc-odoo-admin-settings.php:326
+#: includes/class-wc-odoo-admin-settings.php:328
+#: includes/class-wc-odoo-admin-settings.php:545
+#: includes/class-wc-odoo-admin-settings.php:547
+#: includes/class-wc-odoo-admin-settings.php:549
+msgid "Update Products"
+msgstr "更新产品"
+
+#: includes/class-wc-odoo-admin-settings.php:332
+#: includes/class-wc-odoo-admin-settings.php:334
+#: includes/class-wc-odoo-admin-settings.php:336
+#: includes/class-wc-odoo-admin-settings.php:553
+#: includes/class-wc-odoo-admin-settings.php:555
+#: includes/class-wc-odoo-admin-settings.php:557
+msgid "Synchronize Stocks"
+msgstr "同步股票"
+
+#: includes/class-wc-odoo-admin-settings.php:340
+#: includes/class-wc-odoo-admin-settings.php:342
+#: includes/class-wc-odoo-admin-settings.php:344
+#: includes/class-wc-odoo-admin-settings.php:561
+#: includes/class-wc-odoo-admin-settings.php:563
+#: includes/class-wc-odoo-admin-settings.php:565
+msgid "Synchronize Price"
+msgstr "同步价格"
+
+#: includes/class-wc-odoo-admin-settings.php:348
+#: includes/class-wc-odoo-admin-settings.php:350
+msgid "Import Categories Frequency"
+msgstr "导入类别频率"
+
+#: includes/class-wc-odoo-admin-settings.php:357
+msgid "Category Sync Frequency"
+msgstr "类别同步频率"
+
+#: includes/class-wc-odoo-admin-settings.php:361
+#: includes/class-wc-odoo-admin-settings.php:363
+#: includes/class-wc-odoo-admin-settings.php:365
+msgid "Import Categories"
+msgstr "导入类别"
+
+#: includes/class-wc-odoo-admin-settings.php:369
+#: includes/class-wc-odoo-admin-settings.php:371
+msgid "Import Attribute Frequency"
+msgstr "导入属性频率"
+
+#: includes/class-wc-odoo-admin-settings.php:378
+msgid "Select Attribute Cron Frequency to Sync Attribute"
+msgstr "选择属性cron频率以同步属性"
+
+#: includes/class-wc-odoo-admin-settings.php:382
+#: includes/class-wc-odoo-admin-settings.php:384
+#: includes/class-wc-odoo-admin-settings.php:386
+msgid "Import Attribute"
+msgstr "导入属性"
+
+#: includes/class-wc-odoo-admin-settings.php:391
+#: includes/class-wc-odoo-admin-settings.php:393
+#: includes/class-wc-odoo-admin-settings.php:611
+#: includes/class-wc-odoo-admin-settings.php:613
+msgid "Update Order Status"
+msgstr "更新订单状态"
+
+#: includes/class-wc-odoo-admin-settings.php:398
+#: includes/class-wc-odoo-admin-settings.php:400
+#: includes/class-wc-odoo-admin-settings.php:618
+#: includes/class-wc-odoo-admin-settings.php:620
+msgid "Update Order Status Frequency"
+msgstr "更新订单状态频率"
+
+#: includes/class-wc-odoo-admin-settings.php:410
+#: includes/class-wc-odoo-admin-settings.php:412
+#: includes/class-wc-odoo-admin-settings.php:414
+msgid "Import/Update Customer"
+msgstr "导入/更新客户"
+
+#: includes/class-wc-odoo-admin-settings.php:418
+#: includes/class-wc-odoo-admin-settings.php:420
+msgid "Import/Update Customer Frequency"
+msgstr "导入/更新客户频率"
+
+#: includes/class-wc-odoo-admin-settings.php:430
+msgid "Import Order"
+msgstr "进口订单"
+
+#: includes/class-wc-odoo-admin-settings.php:437
+#: includes/class-wc-odoo-admin-settings.php:439
+msgid "Import Order Frequency"
+msgstr "进口订单频率"
+
+#: includes/class-wc-odoo-admin-settings.php:450
+#: includes/class-wc-odoo-admin-settings.php:730
+#: includes/tamplate-admin-setting-page.php:379
+#: includes/tamplate-admin-setting-page.php:433
+#: includes/tamplate-admin-setting-page.php:726
+#: includes/tamplate-admin-setting-page.php:747
+#: includes/tamplate-admin-setting-page.php:767
+msgid "From"
+msgstr "从"
+
+#: includes/class-wc-odoo-admin-settings.php:456
+#: includes/class-wc-odoo-admin-settings.php:736
+#: includes/tamplate-admin-setting-page.php:381
+#: includes/tamplate-admin-setting-page.php:435
+#: includes/tamplate-admin-setting-page.php:728
+#: includes/tamplate-admin-setting-page.php:749
+#: includes/tamplate-admin-setting-page.php:769
+msgid "To"
+msgstr "到"
+
+#: includes/class-wc-odoo-admin-settings.php:461
+#: includes/class-wc-odoo-admin-settings.php:463
+msgid "Import Refund Order"
+msgstr "进口退款订单"
+
+#: includes/class-wc-odoo-admin-settings.php:468
+#: includes/class-wc-odoo-admin-settings.php:470
+msgid "Import Refund Order Frequency"
+msgstr "进口退款订单频率"
+
+#: includes/class-wc-odoo-admin-settings.php:480
+#: includes/class-wc-odoo-admin-settings.php:482
+msgid "Import Coupon Frequency"
+msgstr "进口优惠券频率"
+
+#: includes/class-wc-odoo-admin-settings.php:489
+#: includes/class-wc-odoo-admin-settings.php:750
+msgid "Select Coupon Cron Frequency to sync Coupon"
+msgstr "选择优惠券Cron频率到同步优惠券"
+
+#: includes/class-wc-odoo-admin-settings.php:493
+#: includes/class-wc-odoo-admin-settings.php:495
+msgid "Import Coupon"
+msgstr "进口优惠券"
+
+#: includes/class-wc-odoo-admin-settings.php:497
+#: includes/class-wc-odoo-admin-settings.php:505
+msgid "Select Coupon Cron to sync Coupon"
+msgstr "选择优惠券cron to Sync优惠券"
+
+#: includes/class-wc-odoo-admin-settings.php:501
+#: includes/class-wc-odoo-admin-settings.php:503
+#: includes/class-wc-odoo-admin-settings.php:762
+#: includes/class-wc-odoo-admin-settings.php:764
+msgid "Update Coupon"
+msgstr "更新优惠券"
+
+#: includes/class-wc-odoo-admin-settings.php:509
+#: includes/class-wc-odoo-admin-settings.php:511
+#: includes/class-wc-odoo-admin-settings.php:518
+msgid "Export Products Frequency"
+msgstr "出口产品频率"
+
+#: includes/class-wc-odoo-admin-settings.php:522
+msgid "Exclude Product by Categories"
+msgstr "按类别排除产品"
+
+#: includes/class-wc-odoo-admin-settings.php:524
+msgid "Exclude Products by Categories"
+msgstr "将产品排除在类别"
+
+#: includes/class-wc-odoo-admin-settings.php:527
+msgid "Exclude products by categories not to export"
+msgstr "将产品排除在不出口的类别中"
+
+#: includes/class-wc-odoo-admin-settings.php:531
+#: includes/class-wc-odoo-admin-settings.php:533
+#: includes/class-wc-odoo-admin-settings.php:535
+msgid "Export Products"
+msgstr "出口产品"
+
+#: includes/class-wc-odoo-admin-settings.php:538
+msgid "Manual Export Products"
+msgstr "手动出口产品"
+
+#: includes/class-wc-odoo-admin-settings.php:569
+#: includes/class-wc-odoo-admin-settings.php:571
+msgid "Export Categories Frequency"
+msgstr "出口类别频率"
+
+#: includes/class-wc-odoo-admin-settings.php:578
+msgid "Select Category Cron Frequency to sync Category"
+msgstr "选择类别cron频率到同步类别"
+
+#: includes/class-wc-odoo-admin-settings.php:582
+#: includes/class-wc-odoo-admin-settings.php:584
+#: includes/class-wc-odoo-admin-settings.php:586
+msgid "Export Categories"
+msgstr "出口类别"
+
+#: includes/class-wc-odoo-admin-settings.php:590
+#: includes/class-wc-odoo-admin-settings.php:592
+msgid "Export Attribute Frequency"
+msgstr "导出属性频率"
+
+#: includes/class-wc-odoo-admin-settings.php:599
+msgid "Select Attribute Cron Frequency to sync Attribute"
+msgstr "选择属性cron频率以同步属性"
+
+#: includes/class-wc-odoo-admin-settings.php:603
+#: includes/class-wc-odoo-admin-settings.php:605
+#: includes/class-wc-odoo-admin-settings.php:607
+msgid "Export Attribute"
+msgstr "导出属性"
+
+#: includes/class-wc-odoo-admin-settings.php:630
+#: includes/class-wc-odoo-admin-settings.php:632
+msgid "Export order On Checkout"
+msgstr "结帐时出口订单"
+
+#: includes/class-wc-odoo-admin-settings.php:637
+#: includes/class-wc-odoo-admin-settings.php:639
+#: includes/tamplate-admin-setting-page.php:511
+#: includes/tamplate-admin-setting-page.php:515
+msgid "Export Invoice"
+msgstr "出口发票"
+
+#: includes/class-wc-odoo-admin-settings.php:644
+#: includes/class-wc-odoo-admin-settings.php:646
+#: includes/tamplate-admin-setting-page.php:525
+#: includes/tamplate-admin-setting-page.php:529
+msgid "Mark Invoice Paid"
+msgstr "已支付了标记发票"
+
+#: includes/class-wc-odoo-admin-settings.php:648
+#: includes/class-wc-odoo-admin-settings.php:656
+msgid "Export Invoice option should be enabled for this."
+msgstr "应该为此启用导出发票选项。"
+
+#: includes/class-wc-odoo-admin-settings.php:652
+#: includes/class-wc-odoo-admin-settings.php:654
+#: includes/tamplate-admin-setting-page.php:540
+#: includes/tamplate-admin-setting-page.php:544
+msgid "Export Refund Order"
+msgstr "出口退款订单"
+
+#: includes/class-wc-odoo-admin-settings.php:661
+#: includes/class-wc-odoo-admin-settings.php:663
+msgid "Export/Update Customer"
+msgstr "导出/更新客户"
+
+#: includes/class-wc-odoo-admin-settings.php:668
+#: includes/class-wc-odoo-admin-settings.php:670
+msgid "Export/Update Customer Frequency"
+msgstr "导出/更新客户频率"
+
+#: includes/class-wc-odoo-admin-settings.php:680
+#: includes/class-wc-odoo-admin-settings.php:682
+msgid "Export Order"
+msgstr "出口订单"
+
+#: includes/class-wc-odoo-admin-settings.php:688
+#: includes/class-wc-odoo-admin-settings.php:690
+#: includes/tamplate-admin-setting-page.php:555
+#: includes/tamplate-admin-setting-page.php:559
+msgid "Status Mapping"
+msgstr "状态映射"
+
+#: includes/class-wc-odoo-admin-settings.php:695
+#: includes/class-wc-odoo-admin-settings.php:697
+#: includes/class-wc-odoo-admin-settings.php:703
+#: includes/class-wc-odoo-admin-settings.php:705
+#: includes/tamplate-admin-setting-page.php:588
+msgid "Order Status Mapping"
+msgstr "订单状态映射"
+
+#: includes/class-wc-odoo-admin-settings.php:708
+#: includes/tamplate-admin-setting-page.php:572
+msgid "Quote Only"
+msgstr "仅引用"
+
+#: includes/class-wc-odoo-admin-settings.php:709
+#: includes/tamplate-admin-setting-page.php:573
+msgid "Quote and Sales Order"
+msgstr "报价和销售订单"
+
+#: includes/class-wc-odoo-admin-settings.php:710
+#: includes/tamplate-admin-setting-page.php:574
+msgid "In Payment Invoice"
+msgstr "在付款发票中"
+
+#: includes/class-wc-odoo-admin-settings.php:711
+#: includes/tamplate-admin-setting-page.php:575
+msgid "Paid Invoice"
+msgstr "付费发票"
+
+#: includes/class-wc-odoo-admin-settings.php:712
+#: includes/tamplate-admin-setting-page.php:576
+msgid "Cancelled"
+msgstr "取消"
+
+#: includes/class-wc-odoo-admin-settings.php:717
+#: includes/class-wc-odoo-admin-settings.php:719
+msgid "Export Order Frequency"
+msgstr "出口订单频率"
+
+#: includes/class-wc-odoo-admin-settings.php:741
+#: includes/class-wc-odoo-admin-settings.php:743
+msgid "Export Coupon Frequency"
+msgstr "出口优惠券频率"
+
+#: includes/class-wc-odoo-admin-settings.php:754
+#: includes/class-wc-odoo-admin-settings.php:756
+msgid "Export Coupon"
+msgstr "出口优惠券"
+
+#: includes/class-wc-odoo-admin-settings.php:758
+msgid "Select Coupon to sync Coupon"
+msgstr "选择优惠券到同步优惠券"
+
+#: includes/class-wc-odoo-admin-settings.php:766
+msgid "Update Coupon to Odoo"
+msgstr "将优惠券更新到Odoo"
+
+#: includes/class-wc-odoo-admin-settings.php:792
+#: includes/class-wc-odoo-admin-settings.php:794
+msgid "Select Company"
+msgstr "选择公司"
+
+#: includes/class-wc-odoo-admin-settings.php:798
+msgid "Select Company for your CRM"
+msgstr "为您的CRM选择公司"
+
+#: includes/class-wc-odoo-admin-settings.php:802
+#: includes/class-wc-odoo-admin-settings.php:804
+msgid "Select Sale Invoice Journal"
+msgstr "选择销售发票期刊"
+
+#: includes/class-wc-odoo-admin-settings.php:808
+msgid "Select Sale Journal for Odoo invoices"
+msgstr "选择ODOO发票的销售期刊"
+
+#: includes/class-wc-odoo-admin-settings.php:812
+#: includes/class-wc-odoo-admin-settings.php:814
+msgid "Select Tax Type"
+msgstr "选择税型类型"
+
+#: includes/class-wc-odoo-admin-settings.php:818
+#: includes/class-wc-odoo-admin-settings.php:828
+msgid "Select tax term for Odoo invoices"
+msgstr "选择ODOO发票的税项"
+
+#: includes/class-wc-odoo-admin-settings.php:822
+#: includes/class-wc-odoo-admin-settings.php:824
+msgid "Select Shipping Tax Type"
+msgstr "选择运输税类型"
+
+#: includes/class-wc-odoo-admin-settings.php:832
+#: includes/class-wc-odoo-admin-settings.php:834
+msgid "Use Fiscal Positions"
+msgstr "使用财政职位"
+
+#: includes/class-wc-odoo-admin-settings.php:839
+#: includes/class-wc-odoo-admin-settings.php:841
+#: includes/class-wc-odoo-admin-settings.php:845
+msgid "Select Fiscal Position"
+msgstr "选择财政状况"
+
+#: includes/class-wc-odoo-admin-settings.php:854
+#: includes/class-wc-odoo-admin-settings.php:856
+msgid "Select GST Treatment"
+msgstr "选择GST治疗"
+
+#: includes/class-wc-odoo-admin-settings.php:859
+msgid "Select GST Treatmnt for Odoo invoices"
+msgstr "选择GST Treatmnt作为ODOO发票"
+
+#: includes/class-wc-odoo-admin-settings.php:1004
+#: assets/js/admin-settings.js:231
+msgid "-- Select Invoice Journal --"
+msgstr " - 选择发票期刊 - "
+
+#: includes/class-wc-odoo-admin-settings.php:1035
+#: assets/js/admin-settings.js:230
+msgid "-- Select Tax Type --"
+msgstr " - 选择税型 - "
+
+#: includes/class-wc-odoo-admin-settings.php:1057
+#: assets/js/admin-settings.js:197
+#: assets/js/admin-settings.js:208
+msgid "-- Select Fiscal Position --"
+msgstr " - 选择财政状况 - "
+
+#: includes/class-wc-odoo-admin-settings.php:1116
+msgid "-- Select Company --"
+msgstr " - 选择公司 - "
+
+#: includes/class-wc-odoo-admin-settings.php:1135
+msgid "-- Select Categories --"
+msgstr " - 选择类别 - "
+
+#: includes/class-wc2odoo-functions.php:984
+msgid "WC Shipping Charge"
+msgstr "WC运费"
+
+#: includes/class-wc2odoo-functions.php:990
+msgid "delivery product created by WC Odoo Integration"
+msgstr "WC Odoo集成创建的送货产品"
+
+#: includes/class-wc2odoo-functions.php:1020
+msgid "Shipping Charge"
+msgstr "运费"
+
+#: includes/class-wc2odoo-functions.php:1370
+#: includes/multi-company-files/class-wc-odoo-functions.php:1255
+msgid "Product import is already running."
+msgstr "产品导入已经运行。"
+
+#: includes/class-wc2odoo-functions.php:1443
+#: includes/multi-company-files/class-wc-odoo-functions.php:1299
+msgid "Import process has started for "
+msgstr "进口过程已经开始"
+
+#: includes/class-wc2odoo-functions.php:1446
+#: includes/class-wc2odoo-functions.php:2322
+#: includes/multi-company-files/class-wc-odoo-functions.php:1299
+#: includes/multi-company-files/class-wc-odoo-functions.php:2032
+msgid " products"
+msgstr "产品"
+
+#: includes/class-wc2odoo-functions.php:2270
+#: includes/multi-company-files/class-wc-odoo-functions.php:1993
+msgid "Product export is already running."
+msgstr "产品导出已经运行。"
+
+#: includes/class-wc2odoo-functions.php:2319
+#: includes/multi-company-files/class-wc-odoo-functions.php:2032
+msgid "Export process has started for "
+msgstr "出口过程已经开始"
+
+#: includes/class-wc2odoo-functions.php:3545
+#: includes/multi-company-files/class-wc-odoo-functions.php:2901
+msgid "Order Imported From Odoo"
+msgstr "从ODOO导入的订单"
+
+#: includes/class-wc2odoo-functions.php:3692
+#: includes/multi-company-files/class-wc-odoo-functions.php:3023
+msgid "Woo Order Id : "
+msgstr "Woo订单ID："
+
+#: includes/class-wc2odoo-functions.php:4344
+#: includes/multi-company-files/class-wc-odoo-functions.php:3604
+msgid "Order status can't be changed from refunded."
+msgstr "订单状态不能从退款中更改。"
+
+#: includes/class-wc2odoo-functions.php:4419
+msgid "There was security vulnerability issues in your request."
+msgstr "您的请求中存在安全漏洞问题。"
+
+#: includes/tamplate-admin-setting-page.php:252
+#: odoo-for-woocommerce.php:311
+msgid "Settings"
+msgstr "设置"
+
+#: includes/tamplate-admin-setting-page.php:255
+msgid "Import"
+msgstr "进口"
+
+#: includes/tamplate-admin-setting-page.php:258
+msgid "Export"
+msgstr "出口"
+
+#: includes/tamplate-admin-setting-page.php:281
+#: includes/tamplate-admin-setting-page.php:454
+msgid "Product Functions"
+msgstr "产品功能"
+
+#: includes/tamplate-admin-setting-page.php:301
+#: includes/tamplate-admin-setting-page.php:471
+msgid "Discount Functions"
+msgstr "折扣功能"
+
+#: includes/tamplate-admin-setting-page.php:321
+#: includes/tamplate-admin-setting-page.php:491
+msgid "Order Functions"
+msgstr "订单功能"
+
+#: includes/tamplate-admin-setting-page.php:327
+#: includes/tamplate-admin-setting-page.php:331
+#: includes/tamplate-admin-setting-page.php:674
+#: includes/tamplate-admin-setting-page.php:678
+msgid "Customer Frequency"
+msgstr "客户频率"
+
+#: includes/tamplate-admin-setting-page.php:337
+#: includes/tamplate-admin-setting-page.php:684
+msgid "Select Customer Cron Frequency to Sync Customer"
+msgstr "选择客户频率以同步客户"
+
+#: includes/tamplate-admin-setting-page.php:343
+#: includes/tamplate-admin-setting-page.php:347
+msgid "Import/Update Customers"
+msgstr "导入/更新客户"
+
+#: includes/tamplate-admin-setting-page.php:357
+#: includes/tamplate-admin-setting-page.php:361
+#: includes/tamplate-admin-setting-page.php:704
+#: includes/tamplate-admin-setting-page.php:708
+msgid "Order Frequency"
+msgstr "订单频率"
+
+#: includes/tamplate-admin-setting-page.php:367
+#: includes/tamplate-admin-setting-page.php:714
+msgid "Select Order Cron Frequency to Sync Order"
+msgstr "选择订单cron频率以同步订单"
+
+#: includes/tamplate-admin-setting-page.php:373
+#: includes/tamplate-admin-setting-page.php:377
+msgid "Import Orders"
+msgstr "进口订单"
+
+#: includes/tamplate-admin-setting-page.php:394
+#: includes/tamplate-admin-setting-page.php:398
+msgid "Order Refund Frequency"
+msgstr "订单退款频率"
+
+#: includes/tamplate-admin-setting-page.php:404
+msgid "Select Refund Order Cron Frequency to Sync Refund Order"
+msgstr "选择退款订单cron频率以同步退款订单"
+
+#: includes/tamplate-admin-setting-page.php:410
+#: includes/tamplate-admin-setting-page.php:414
+msgid "Import Refund Orders"
+msgstr "进口退款订单"
+
+#: includes/tamplate-admin-setting-page.php:427
+#: includes/tamplate-admin-setting-page.php:431
+msgid "Odoo Customer Sync"
+msgstr "ODOO客户同步"
+
+#: includes/tamplate-admin-setting-page.php:437
+#: includes/tamplate-admin-setting-page.php:751
+#: includes/tamplate-admin-setting-page.php:771
+msgid "Submit"
+msgstr "提交"
+
+#: includes/tamplate-admin-setting-page.php:438
+#: includes/tamplate-admin-setting-page.php:752
+#: includes/tamplate-admin-setting-page.php:772
+msgid "Please wait."
+msgstr "请稍等。"
+
+#: includes/tamplate-admin-setting-page.php:497
+#: includes/tamplate-admin-setting-page.php:501
+msgid "Export Order On Checkout"
+msgstr "结帐时出口订单"
+
+#: includes/tamplate-admin-setting-page.php:525
+msgid "If this setting is enabled the invoice will be marked as completed regardless of the order status. Status mapping will be skipped."
+msgstr "如果启用了此设置，则无论订单状态如何，发票都将被标记为已完成的。状态映射将跳过。"
+
+#: includes/tamplate-admin-setting-page.php:534
+#: includes/tamplate-admin-setting-page.php:549
+msgid "Export Invoice should be enabled for this."
+msgstr "应该为此启用导出发票。"
+
+#: includes/tamplate-admin-setting-page.php:564
+msgid "Custom Status Mapping."
+msgstr "自定义状态映射。"
+
+#: includes/tamplate-admin-setting-page.php:579
+msgid "This will only create Quote on Odoo. No Sales Order and invoice."
+msgstr "这只会在Odoo上创建报价。没有销售订单和发票。"
+
+#: includes/tamplate-admin-setting-page.php:580
+msgid "Quote and Sales Order will be created. Invoice will not be created."
+msgstr "报价和销售订单将创建。不会创建发票。"
+
+#: includes/tamplate-admin-setting-page.php:581
+msgid "Quote, Sales Order and Invoice will be created. Invoice will be in “In Payment“ State."
+msgstr "将创建报价，销售订单和发票。发票将处于“付款”状态。"
+
+#: includes/tamplate-admin-setting-page.php:582
+msgid "Quote, Sales Order and Invoice will be created. The invoice will be marked as PAID"
+msgstr "将创建报价，销售订单和发票。发票将被标记为付费"
+
+#: includes/tamplate-admin-setting-page.php:583
+msgid "Order will be marked as canceled"
+msgstr "订单将被标记为取消"
+
+#: includes/tamplate-admin-setting-page.php:593
+#: includes/tamplate-admin-setting-page.php:609
+#: includes/tamplate-admin-setting-page.php:641
+msgid "Woo Order Status"
+msgstr "WOO订单状态"
+
+#: includes/tamplate-admin-setting-page.php:596
+#: includes/tamplate-admin-setting-page.php:623
+#: includes/tamplate-admin-setting-page.php:655
+msgid "Odoo Order State"
+msgstr "ODOO订单状态"
+
+#: includes/tamplate-admin-setting-page.php:611
+#: includes/tamplate-admin-setting-page.php:643
+msgid "Select Woo Status"
+msgstr "选择Woo状态"
+
+#: includes/tamplate-admin-setting-page.php:618
+#: includes/tamplate-admin-setting-page.php:650
+msgid "Woo Status to Map."
+msgstr "WOO状态要映射。"
+
+#: includes/tamplate-admin-setting-page.php:625
+#: includes/tamplate-admin-setting-page.php:631
+#: includes/tamplate-admin-setting-page.php:657
+#: includes/tamplate-admin-setting-page.php:662
+#: assets/js/admin-settings.js:151
+msgid "Selected state's description."
+msgstr "选定状态的描述。"
+
+#: includes/tamplate-admin-setting-page.php:625
+#: includes/tamplate-admin-setting-page.php:657
+msgid "Select Odoo State"
+msgstr "选择odoo状态"
+
+#: includes/tamplate-admin-setting-page.php:669
+msgid "(+) Add More Mapping"
+msgstr "（+）添加更多映射"
+
+#: includes/tamplate-admin-setting-page.php:690
+#: includes/tamplate-admin-setting-page.php:694
+msgid "Export/Update Customers"
+msgstr "导出/更新客户"
+
+#: includes/tamplate-admin-setting-page.php:720
+#: includes/tamplate-admin-setting-page.php:724
+msgid "Export Orders"
+msgstr "出口订单"
+
+#: includes/tamplate-admin-setting-page.php:741
+#: includes/tamplate-admin-setting-page.php:745
+msgid "Product Sync"
+msgstr "产品同步"
+
+#: includes/tamplate-admin-setting-page.php:761
+#: includes/tamplate-admin-setting-page.php:765
+msgid "Customer Sync"
+msgstr "客户同步"
+
+#: includes/tamplate-admin-setting-page.php:816
+msgid "Product sync successfully."
+msgstr "产品成功同步。"
+
+#: includes/tamplate-admin-setting-page.php:854
+msgid "Customer sync  successfully ."
+msgstr "客户成功同步。"
+
+#: includes/tamplate-admin-setting-page.php:893
+msgid "Customer has been successfully sync."
+msgstr "客户已成功同步。"
+
+#. translators: %d is replaced with the number of minutes conprising an interval
+#: includes/wp-background-processing/classes/wp-background-process.php:454
+msgid "Every %d Minutes"
+msgstr "每％D分钟"
+
+#: odoo-for-woocommerce.php:70
+msgid "WooCommerce plugin is missing. Odoo for WooCommerce plugin requires WooCommerce."
+msgstr "WooCommerce插件缺少。 WooCommerce插件的ODOO需要WooCommerce。"
+
+#: odoo-for-woocommerce.php:312
+msgid "Support"
+msgstr "支持"
+
+#: odoo-for-woocommerce.php:327
+msgid "Odoo Sync"
+msgstr "ODOO同步"
+
+#: odoo-for-woocommerce.php:340
+msgid "Product Not to be synced"
+msgstr "产品不同步"
+
+#: odoo-for-woocommerce.php:343
+msgid "Not synced"
+msgstr "没有同步"
+
+#: odoo-for-woocommerce.php:357
+msgid "Exclude from Oddo"
+msgstr "排除在Oddo"
+
+#~ msgid "Select Coupon  Cron  to sync Coupon"
+#~ msgstr "选择优惠券cron to Sync优惠券"
