@@ -7,7 +7,7 @@
  * Author URI:        https://github.com/slemos
  * Text Domain:       wc2odoo
  * Domain Path:       /languages
- * Version:           0.7.5
+ * Version:           0.7.7
  * Requires at least: 5.6
  * Requires PHP:      8.1
  * License:           GPL v2 or later
@@ -151,6 +151,8 @@ if (!class_exists('wc2odoo_Integration')) :
                         /* Include our integration class.*/
                         if ($odoo_api->is_authenticate()) {
                             require_once \WC2ODOO_INTEGRATION_PLUGINDIR . 'includes/class-wc2odoo-functions.php';
+                            // Change hook 'woocommerce_checkout_order_processed' to 'woocommerce_payment_complete'
+                            add_action( 'woocommerce_payment_complete', array( $this, 'create_order_to_odoo' ), 10, 1 );
                         }
                     }
                 }
@@ -220,6 +222,13 @@ if (!class_exists('wc2odoo_Integration')) :
             require_once \WC2ODOO_INTEGRATION_PLUGINDIR . 'includes/class-wc2odoo-functions.php';
             $odoo_function = new WC2ODOO_Functions();
             $odoo_function->odoo_export_product_by_date_background();
+        }
+
+        public function create_order_to_odoo()
+        {
+            require_once \WC2ODOO_INTEGRATION_PLUGINDIR . 'includes/class-wc2odoo-functions.php';
+            $odoo_function = new WC2ODOO_Functions();
+            $odoo_function->create_order_to_odoo();
         }
 
         public function odoo_export_customer_by_date()

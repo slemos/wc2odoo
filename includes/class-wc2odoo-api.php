@@ -209,6 +209,11 @@ class WC2ODOO_API {
 
 			return false;
 		}
+		else if ( empty( $record ) ) {
+			$this->add_log( 'Record not found' );
+
+			return false;
+		}
 		//$this->add_log( 'Record fetched : ' . print_r( $record, true ) );
 		return $record[0];
 	}
@@ -378,7 +383,7 @@ class WC2ODOO_API {
 			$log = array_shift( $bt );
 			unset( $log['object'] );
 			unset( $log['type'] );
-			$wc_logger->log( 'wc2odoo', $message, $log );
+			$wc_logger->log( 'warning', $message, $log );
 		}
 	}
 

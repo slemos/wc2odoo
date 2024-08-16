@@ -5,3 +5,7 @@
 composer.lock
 package-lock.json
 wc2odoo.zip
+bootstrap.php
+.phpunit.result.cache
+pp.*
+.vscode

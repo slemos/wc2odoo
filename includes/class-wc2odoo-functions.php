@@ -8,6 +8,7 @@
 
 if ( ! class_exists( 'WC2ODOO_Functions' ) ) {
 
+	require_once WC2ODOO_INTEGRATION_PLUGINDIR . 'vendor/autoload.php';
 	require_once WC2ODOO_INTEGRATION_PLUGINDIR . '/includes/class-wc2odoo-api.php';
 	require_once WC2ODOO_INTEGRATION_PLUGINDIR . '/includes/class-wc2odoo-helpers.php';
 	require_once WC2ODOO_INTEGRATION_PLUGINDIR . '/includes/class-wc2odoo-common-functions.php';
@@ -81,13 +82,10 @@ if ( ! class_exists( 'WC2ODOO_Functions' ) ) {
 		 */
 		private $states;
 
-
 		/**
 		 * Constructor.
 		 */
 		public function __construct() {
-			// Change hook 'woocommerce_checkout_order_processed' to 'woocommerce_payment_complete'
-			add_action( 'woocommerce_payment_complete', array( $this, 'create_order_to_odoo' ), 10, 1 );
 
 			$odoo_integrations   = get_option( 'woocommerce_woocommmerce_odoo_integration_settings' );
 			$this->odoo_settings = $odoo_integrations;
@@ -110,7 +108,6 @@ if ( ! class_exists( 'WC2ODOO_Functions' ) ) {
 				$this->order_create( $order_id );
 			}
 		}
-
 
 		/**
 		 * Create or update customer.
@@ -138,7 +135,7 @@ if ( ! class_exists( 'WC2ODOO_Functions' ) ) {
 				'street'        => $all_meta_for_user['billing_address_1'][0],
 				'city'          => $all_meta_for_user['billing_city'][0],
 				'l10n_latam_identification_type_id' => '4',
-				'vat'           => str_replace( '.', '', $all_meta_for_user['billing_rut'][0] ),
+				'vat'           => $this->format_rut( $all_meta_for_user['billing_rut'][0] ),
 				'l10n_cl_sii_taxpayer_type' => '1',
 				'l10n_cl_dte_email' => $all_meta_for_user['billing_email'][0],
 				'l10n_cl_activity_description' => $all_meta_for_user['billing_giro'][0] ?: 'Manicurista',
@@ -314,10 +311,10 @@ if ( ! class_exists( 'WC2ODOO_Functions' ) ) {
 				'parent_id' => (int) $parent_id,
 				'phone'     => $userdata['phone'] ?? false,
 			);
-			$odoo_api = $this->get_odoo_api();
+			// $odoo_api = $this->get_odoo_api();
 			if ( ! empty( $userdata['state'] ) || ! empty( $userdata['country'] ) ) {
 				$state_county = $this->get_state_and_country_codes( $userdata['state'], $userdata['country'] );
-				$odoo_api->add_log( 'Odoo State : ' . print_r( $state_county, 1 ) );
+				// $odoo_api->add_log( 'Odoo State : ' . print_r( $state_county, 1 ) );
 				if ( ! empty( $state_county ) ) {
 					$data['state_id']   = $state_county['state'];
 					$data['country_id'] = $state_county['country'];
@@ -749,7 +746,7 @@ if ( ! class_exists( 'WC2ODOO_Functions' ) ) {
 				// If user not exists in Odoo.
 				if ( ! $customer_id ) {
 					// Search record in the Odoo By email.
-					$conditions  = array( array( 'email', '=', $user->user_email ) );
+					$conditions  = array( array( 'email', '=', $user->user_email ), array( 'parent_id', '=', 'False' ) );
 					$customer_id = $odoo_api->search_record( 'res.partner', $conditions );
 
 					// If user not exists in Odoo then Create New Customer in odoo.
@@ -764,6 +761,7 @@ if ( ! class_exists( 'WC2ODOO_Functions' ) ) {
 					$customer_data['id'] = $customer_id;
 
 					$is_new_billing_address = true;
+					$modified_addresses = false;
 
 					$wc2odoo_billing_addresses = get_user_meta( $user->ID, '_wc2odoo_billing_addresses', true );
 
@@ -772,13 +770,25 @@ if ( ! class_exists( 'WC2ODOO_Functions' ) ) {
 					$billing_address = $this->create_address_data( 'invoice', $order->get_address( 'billing' ), $customer_id );
 
 					if ( ! empty( $wc2odoo_billing_addresses ) ) {
-						foreach ( $wc2odoo_billing_addresses as $wc2odoo_billing_address ) {
+						foreach ( $wc2odoo_billing_addresses as $key => $wc2odoo_billing_address ) {
 							if ( trim( strtolower( $wc2odoo_billing_address['street'] ) ) === trim( strtolower( $billing_address['street'] ) ) && $wc2odoo_billing_address['zip'] === $billing_address['zip'] ) {
-								$customer_data['invoice_id'] = $wc2odoo_billing_address['partner_invoice_id'];
-								$is_new_billing_address      = false;
-
-								break;
+								// Query Odoo to see if the address exists.
+								$partner_invoice_id = $odoo_api->fetch_record_by_id( 'res.partner', array( $wc2odoo_billing_address['partner_invoice_id'] ) );
+								if ( ! $partner_invoice_id ) {
+									// remove the address from the list.
+									$odoo_api->add_log( 'Removing billing address from the list: ' . print_r( $wc2odoo_billing_address, true ) );
+									unset( $wc2odoo_billing_addresses[$key] );
+									$modified_addresses = true;
+								} else {
+									$customer_data['invoice_id'] = $wc2odoo_billing_address['partner_invoice_id'];
+									$is_new_billing_address      = false;
+									break;
+								}
 							}
+						}
+						if ( $modified_addresses ) {
+							$wc2odoo_billing_addresses = array_values( $wc2odoo_billing_addresses );
+							update_user_meta( $user->ID, '_wc2odoo_billing_addresses', $wc2odoo_billing_addresses );
 						}
 					} else {
 						$wc2odoo_billing_addresses = array();
@@ -4003,7 +4013,6 @@ if ( ! class_exists( 'WC2ODOO_Functions' ) ) {
 			$export_inv_enable = $helper->is_export_inv();
 			$inv_mark_paid     = $helper->is_inv_mark_paid();			
 
-
 			if ( 'shop_order' !== $order->get_type() ) {
 				return false;
 			}
@@ -4627,7 +4636,7 @@ if ( ! class_exists( 'WC2ODOO_Functions' ) ) {
 		 *
 		 * @return WC2ODOO_API The Odoo API instance.
 		 */
-		private function get_odoo_api() {
+		public function get_odoo_api() {
 			if ( ! $this->odoo_api ) {
 				$this->odoo_api = new WC2ODOO_API();
 			}
@@ -4641,17 +4650,16 @@ if ( ! class_exists( 'WC2ODOO_Functions' ) ) {
 		 * @param int $l10n_latam_document_type_id The ID of the document type.
 		 * @return string The last l10n_latam_document_number formated with 000000.
 		 */
-		private function get_last_l10n_latam_document_number( $l10n_latam_document_type_id ) {
+		public function get_last_l10n_latam_document_number( $l10n_latam_document_type_id ) {
 			$odoo_api = $this->get_odoo_api();
-			$last_number = $odoo_api->read_all('account.move', array(array( 'l10n_latam_document_type_id', '=', $l10n_latam_document_type_id ), array( 'name', 'not like', 'False%' ), array( 'state', '!=', 'cancel'), array( 'journal_id', '=', $this->odoo_settings['invoiceJournal'] ) ), array( 'l10n_latam_document_number' ), 1, 'name desc');
+			$last_number = $odoo_api->read_all('account.move', array(array( 'l10n_latam_document_type_id', '=', (int) $l10n_latam_document_type_id ), array( 'name', 'not like', 'False%' ), array( 'state', '!=', 'cancel'), array( 'journal_id', '=', (int) $this->odoo_settings['invoiceJournal'] ) ), array( 'l10n_latam_document_number' ), 1, 'name desc');
 			
-			if ( isset( $last_number['fail'] ) ) {
-				$error_msg = 'Unable to get Last Document Number For Document Type Id  =>' . $l10n_latam_document_type_id . 'Msg : ' . print_r( $last_number, true );
+			if ( isset( $last_number['fail'] ) || !isset( $last_number[0] ) ) {
+				$error_msg = 'Unable to get Last Document Number For Document Type Id  => ' . $l10n_latam_document_type_id . ' - Msg : ' . print_r( $last_number, true );
 				$odoo_api->add_log( $error_msg );
 
 				return '000000';
 			}
-
 			$new_number = (int) $last_number[0]['l10n_latam_document_number'];
 			$new_number++;
 
@@ -4659,6 +4667,15 @@ if ( ! class_exists( 'WC2ODOO_Functions' ) ) {
 			return str_pad( $new_number, 6, '0', STR_PAD_LEFT );
 		}
 
+		public function format_rut($rut) {
+			// Remove any non-numeric characters
+			$rut = preg_replace('/[^0-9]/', '', $rut);
+		
+			// Insert the hyphen before the last character
+			$formatted_rut = substr($rut, 0, -1) . '-' . substr($rut, -1);
+		
+			return $formatted_rut;
+		}
 
 	}
 
