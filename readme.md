@@ -1,6 +1,9 @@
 # Odoo for WooCommerce
 
 This project aims to integrate the popular e-commerce platform WooCommerce with the powerful ERP system Odoo. By combining the features of both platforms, users can streamline their business processes, manage inventory, track orders, and synchronize data seamlessly.
+⚠️ Supported Odoo Versions
+This plugin is compatible with Odoo 13, Odoo 14, Odoo 15, and Odoo 16 only.
+It does not support versions earlier than Odoo 13 or later than Odoo 16.
 
 ## Features
 
