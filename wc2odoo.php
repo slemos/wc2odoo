@@ -58,7 +58,7 @@ function install_odoo_integration_plugin()
     }
     catch (Exception $e) {
         // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-        echo '<div class="error"><p>' . esc_html_e('Odoo API is not installed. Please install the Odoo API.', 'wc2odoo') . '</p></div>';
+        echo '<div class="error"><p>' . esc_html__('Odoo API is not installed. Please install the Odoo API.', 'wc2odoo') . '</p></div>';
         die();
     }
 }
