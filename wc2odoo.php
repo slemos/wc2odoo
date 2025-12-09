@@ -332,7 +332,7 @@ if (!class_exists('wc2odoo_Integration')) :
                 }
             ?>
 				/>
-				<?php echo esc_html_e('Exclude from Oddo', 'wc2odoo'); ?>
+				<?php esc_html_e('Exclude from Oddo', 'wc2odoo'); ?>
 				</label>
 			</p>
 			<?php
